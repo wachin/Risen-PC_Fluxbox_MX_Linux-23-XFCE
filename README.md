@@ -79,8 +79,6 @@ Estando en su HOME, kcopie todo de una sola vez  (también si no le funciona en 
     mkdir -p ~/.config/pnmixer/
     cp config ~/.config/pnmixer/ && cd && echo "Dios les bendiga"
 ```
-
-peguelo en una terminal como lo indica la imagen anterior y ejecutelo
     
 **Explicación**  
 1er línea.- Clona el repositorio  
@@ -90,8 +88,6 @@ peguelo en una terminal como lo indica la imagen anterior y ejecutelo
 5ta línea.- Copia y pega el archivo config de pnmixer que puse dentro de la carpeta .fluxbox que contiene la instrucción "pavucontrol" para que al darle clic y dar clic en elbotón "Mixer" aparezca el control de volumen. **Nota:** También se lo podría Ud poner manualmente así: Clic derecho al icono --> Preferences --> Behavior --> Volume Control Command y allí añadir: "pavucontrol"  
 
 Por cierto, en la terminal quedarán ubicados en .fluxbox pero pueden salir de allí con cd.
-
-
 
 # Instalar Menú de aplicaciones con iconos, con xdgmenumaker
 El siguiente programa necesario se llama xdgmenumaker, que me gustaría que lo pongan dentro de alguna carpeta aparte, yo estoy usando:
