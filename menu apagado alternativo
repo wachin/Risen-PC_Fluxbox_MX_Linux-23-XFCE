@@ -1,0 +1,8 @@
+   [end]
+ [submenu] (Salir) </usr/share/icons/gnome/16x16/actions/stop.png>
+   [exec] (Reiniciar) {sudo systemctl reboot} </usr/share/icons/gnome/16x16/actions/reload.png>
+   [exec] (Apagar) {sudo systemctl poweroff} </usr/share/icons/gnome/16x16/actions/system-shutdown.png>
+   [exec] (Suspender) {sudo systemctl suspend} </usr/share/icons/gnome/16x16/actions/player_pause.png>
+   [exit] (Cerrar Sesión) </usr/share/icons/gnome/16x16/actions/system-log-out.png>
+ [end]
+[end]

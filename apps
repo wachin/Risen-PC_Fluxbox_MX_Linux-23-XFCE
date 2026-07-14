@@ -1,0 +1,10 @@
+[app] (name=fbrun)
+  [Position]	(WINCENTER)	{0 0}
+  [Layer]	{2}
+[end]
+
+# Ensure modal/transient dialogs from common Qt/KDE apps grab focus and keep it
+# long enough to become interactive under Fluxbox ClickFocus.
+[transient] (Class=^(kate|kdenlive|dolphin|dmidiplayer|ksnip)$)
+  [FocusProtection] {Gain,Lock}
+[end]

@@ -1,0 +1,61 @@
+[begin] (fluxbox)
+[include] (~/.fluxbox/xdg_menu)
+ [submenu] (Herramientas del Sistema) </usr/share/icons/gnome/16x16/categories/preferences-system.png>
+   [exec] (MX Herramientas) {mx-tools} </usr/share/icons/hicolor/96x96/apps/mx-tools.png>
+   [exec] (Ajustes del Monitor) {lxrandr} </usr/share/icons/gnome/16x16/devices/video-display.png>
+   [exec] (Resetear Nitrogen en 1er uso, y resetear para usar Dos Monitores) {rm -r ~/.config/nitrogen/} </usr/share/icons/gnome/16x16/apps/gnome-settings-background.png>
+   [exec] (Cambair el fondo del escritorio con Nitrogen - imagenes del sistema-) {nitrogen /usr/share/backgrounds/} </usr/share/icons/gnome/16x16/apps/gnome-settings-background.png>
+   [exec] (Cambiar sus fondos de escritorio con Nitrogen - sus imagenes-) {nitrogen} </usr/share/icons/gnome/16x16/apps/gnome-settings-background.png>
+   [exec] (Personalizar apariencia y comportamiento) {lxappearance} </usr/share/icons/gnome/16x16/apps/preferences-desktop-theme.png>
+   [exec] (Ajustes QT5 "Aplicaciones KDE") {qt5ct} </usr/share/icons/gnome/16x16/apps/preferences-desktop-theme.png>
+   [exec] (Gestor de paquetes Synaptic) {synaptic-pkexec} </usr/share/icons/gnome/16x16/categories/applications-other.png>
+   [exec] (Administrador de archivos Dolphin) {dolphin} </usr/share/icons/gnome/16x16/places/folder.png>
+   [exec] (Administrador de archivos Thunar) {thunar --no-desktop} </usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png>
+   [exec] (Proyecto Facilitar el Software Libre en el Ecuador) {xdg-open http://facilitarelsoftwarelibre.blogspot.com} </usr/share/icons/gnome/16x16/emblems/emblem-web.png>
+ [end] # (Herramientas de Fluxbox)
+    [submenu] (Preferencias de Fluxbox) </usr/share/icons/gnome/16x16/categories/preferences-desktop.png>
+        [exec] (Apps "Ajustes personalizados para ciertas aplicaciones") {exo-open ~/.fluxbox/apps} </usr/share/icons/gnome/16x16/apps/accessories-text-editor.png>
+        [exec] (Init "Ajustes personalizados a la configuración de Fluxbox") {exo-open ~/.fluxbox/init} </usr/share/icons/gnome/16x16/apps/accessories-text-editor.png>
+        [exec] (Keys "Atajos de teclado") {exo-open ~/.fluxbox/keys} </usr/share/icons/gnome/16x16/apps/accessories-text-editor.png>
+        [exec] (Main "Menú principal de aplicaciones") {exo-open ~/.fluxbox/menu} </usr/share/icons/gnome/16x16/apps/accessories-text-editor.png>
+        [exec] (Overlay "Línea que evita a estilos poner Wallpaper") {exo-open ~/.fluxbox/overlay} </usr/share/icons/gnome/16x16/apps/accessories-text-editor.png>
+        [exec] (Startup "Aplicaciones que se cargarán al Inicio") {featherpad ~/.fluxbox/startup} </usr/share/icons/gnome/16x16/apps/accessories-text-editor.png>
+        [exec] (Estilos "Lugar donde están ubicados los estilos de Fluxbox") {thunar ~/.fluxbox/styles/} </usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png>
+        [config] (Ventana)  </usr/share/icons/gnome/16x16/apps/krfb.png>
+    [end]
+    [submenu] (Idioma del teclado) </usr/share/icons/gnome/16x16/actions/gtk-bold.png>
+        [exec] (DE Teclado Alemán) {setxkbmap de} </usr/share/gxkb/flags/de.png>
+        [exec] (US Teclado Inglés) {setxkbmap us} </usr/share/gxkb/flags/us.png>
+        [exec] (LAT Teclado Español latino){setxkbmap latam} <~/.fluxbox/gxkb-flags/latam.png>
+        [exec] (ES Teclado Español europeo) {setxkbmap es} </usr/share/gxkb/flags/es.png>
+        [exec] (FR Teclado Francés) {setxkbmap fr} </usr/share/gxkb/flags/fr.png>
+        [exec] (GB Teclado Inglés británico) {setxkbmap gb} </usr/share/gxkb/flags/gb.png>
+        [exec] (GR Teclado Griego) {setxkbmap gr} </usr/share/gxkb/flags/gr.png>
+        [exec] (IT Teclado Italiano) {setxkbmap it} </usr/share/gxkb/flags/it.png>
+        [exec] (PL Teclado Polaco) {setxkbmap pl} </usr/share/gxkb/flags/pl.png>
+        [exec] (PT Teclado Portugués) {setxkbmap pt} </usr/share/gxkb/flags/pt.png>
+        [exec] (RU Teclado Ruso) {setxkbmap ru} </usr/share/gxkb/flags/ru.png>
+
+    [end]
+   [workspaces] (Espacios de trabajo) </usr/share/icons/gnome/16x16/apps/xfwm4.png>
+   [reconfig] (Reajustar Fluxbox) </usr/share/icons/gnome/16x16/status/media-playlist-repeat.png>
+## No funciona:   [restart] (Reiniciar Fluxbox) </usr/share/icons/gnome/16x16/actions/reload.png>
+   [exec] (Buscador de Aplicaciones)  {xfce4-appfinder} </usr/share/icons/gnome/16x16/actions/system-search.png>
+   [exec] (VS Code Corregido) {code --password-store="gnome-libsecret"} </usr/share/pixmaps/vscode.png>
+   [exec] (Cursor AI Corregido) {cursor --password-store="gnome-libsecret"} </usr/share/pixmaps/co.anysphere.cursor.png>
+   [exec] (Kiro Corregido) {/usr/share/kiro/kiro --password-store="gnome-libsecret"} </usr/share/pixmaps/code-oss.png>
+   [exec] (Windsurf Corregido) {/usr/share/windsurf/windsurf --password-store="gnome-libsecret"} </usr/share/pixmaps/windsurf.png>
+   [exec] (Antigravity Corregido) {/usr/share/antigravity/antigravity --password-store="gnome-libsecret"} </usr/share/pixmaps/antigravity.png>
+   [exec] (TRAE Corregido) {/usr/share/trae/trae --password-store="gnome-libsecret"} </usr/share/pixmaps/trae.png>
+   [exec] (Actualizar menu de Apps) {xdgmenumaker -i -s16 -f fluxbox > ~/.fluxbox/xdg_menu} </usr/share/icons/gnome/16x16/actions/gtk-redo-ltr.png>
+   [submenu] (Estilos) {} </usr/share/icons/gnome/16x16/apps/xfwm4.png>
+      [stylesdir] (/usr/share/fluxbox/styles)
+      [stylesdir] (~/.fluxbox/styles)
+   [end]
+ [submenu] (Salir) </usr/share/icons/gnome/16x16/actions/stop.png>
+   [exec] (Reiniciar) {systemctl reboot} </usr/share/icons/gnome/16x16/actions/reload.png>
+   [exec] (Apagar) {systemctl poweroff} </usr/share/icons/gnome/16x16/actions/system-shutdown.png>
+   [exec] (Suspender) {systemctl suspend} </usr/share/icons/gnome/16x16/actions/player_pause.png>
+   [exit] (Cerrar Sesión) </usr/share/icons/gnome/16x16/actions/system-log-out.png>
+ [end]
+[end]

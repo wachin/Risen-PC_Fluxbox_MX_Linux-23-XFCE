@@ -1,0 +1,256 @@
+[submenu] (Applications) </usr/share/icons/Adwaita/48x48/legacy/applications-other.png>
+  [submenu] (Accessories) </usr/share/icons/Adwaita/24x24/legacy/applications-accessories.png>
+    [exec] (Application Finder) {xfce4-appfinder} </usr/share/icons/hicolor/16x16/apps/org.xfce.appfinder.png>
+    [exec] (Archive Manager) {file-roller }
+    [exec] (Ark) {ark } </usr/share/icons/hicolor/48x48/apps/ark.png>
+    [exec] (Bulk Rename) {thunar --bulk-rename } </usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png>
+    [exec] (Catfish File Search) {catfish } </usr/share/icons/hicolor/48x48/apps/org.xfce.catfish.png>
+    [exec] (Conky Manager) {conky-manager2} </usr/share/pixmaps/conky-manager2.png>
+    [exec] (Conky Toggle) {conkytoggle.sh} </usr/share/icons/hicolor/64x64/apps/mx-conky.png>
+    [exec] (Disks) {gnome-disks}
+    [exec] (Double Commander) {doublecmd } </usr/share/icons/hicolor/256x256/apps/doublecmd.png>
+    [exec] (FeatherPad) {featherpad }
+    [exec] (Files) {nemo } </usr/share/icons/Adwaita/24x24/legacy/system-file-manager.png>
+    [exec] (Font Manager) {font-manager } </usr/share/icons/hicolor/256x256/apps/org.gnome.FontManager.png>
+    [exec] (Font Viewer) {/usr/libexec/font-manager/font-viewer } </usr/share/icons/hicolor/256x256/apps/org.gnome.FontViewer.png>
+    [exec] (Fonts) {gnome-font-viewer }
+    [exec] (Galculator) {galculator} </usr/share/icons/hicolor/48x48/apps/galculator.png>
+    [exec] (GtkHash) {gtkhash } </usr/share/icons/hicolor/32x32/apps/org.gtkhash.gtkhash.png>
+    [exec] (Gxkb) {gxkb} </usr/share/pixmaps/gxkb.xpm>
+    [exec] (Kate) {kate -b } </usr/share/icons/hicolor/16x16/apps/kate.png>
+    [exec] (KeePassXC) {keepassxc } </usr/share/icons/hicolor/256x256/apps/keepassxc.png>
+    [exec] (Krusader) {krusader  } </usr/share/icons/hicolor/16x16/apps/krusader_user.png>
+    [exec] (Kvantum Manager) {kvantummanager}
+    [exec] (Magnus) {magnus} </usr/share/icons/gnome/16x16/actions/zoom-best-fit.png>
+    [exec] (Midnight Commander) {/usr/bin/x-terminal-emulator -e mc} </usr/share/icons/hicolor/64x64/apps/MidnightCommander.png>
+    [exec] (Midnight Commander editor) {/usr/bin/x-terminal-emulator -e mcedit} </usr/share/icons/hicolor/64x64/apps/MidnightCommander.png>
+    [exec] (Onboard) {onboard} </usr/share/icons/hicolor/16x16/apps/onboard.png>
+    [exec] (Passwords and Keys) {seahorse }
+    [exec] (PeaZip) {peazip} </usr/share/pixmaps/peazip.png>
+    [exec] (Screenshot) {xfce4-screenshooter} </usr/share/icons/hicolor/16x16/apps/org.xfce.screenshooter.png>
+    [exec] (Searchmonkey) {searchmonkey} </usr/share/icons/hicolor/16x16/apps/searchmonkey.png>
+    [exec] (Sensor Viewer) {xfce4-sensors} </usr/share/icons/hicolor/24x24/apps/xfce-sensors.png>
+    [exec] (Shutter) {shutter } </usr/share/icons/hicolor/16x16/apps/shutter.png>
+    [exec] (Spectacle) {/usr/bin/spectacle}
+    [exec] (TeXInfo) {/usr/bin/x-terminal-emulator -e info} </org/gtk/libgtk/icons/16x16/actions/dialog-information.png>
+    [exec] (TypeCatcher) {/usr/bin/typecatcher}
+    [exec] (Zed) {/home/wachin/.local/zed.app/bin/zed } </home/wachin/.local/zed.app/share/icons/hicolor/512x512/apps/zed.png>
+    [exec] (gedit) {gedit }
+    [exec] (ksnip) {env QT_QPA_PLATFORMTHEME=gtk3 ksnip}
+    [exec] (luckyBackup) {/usr/bin/luckybackup} </usr/share/pixmaps/luckybackup.png>
+    [exec] (nobleNote) {noblenote} </usr/share/pixmaps/noblenote.png>
+  [end] # (Accessories)
+  [submenu] (Development) </usr/share/icons/Adwaita/48x48/legacy/applications-development.png>
+    [exec] (Android Studio) {env LANG=en_US.UTF-8 /opt/android-studio/bin/studio } </opt/android-studio/bin/studio.png>
+    [exec] (Antigravity) {/usr/share/antigravity/antigravity --password-store="gnome-libsecret" } </usr/share/pixmaps/antigravity.png>
+    [exec] (Bluefish Editor) {bluefish } </usr/share/icons/hicolor/16x16/apps/bluefish.png>
+    [exec] (Cursor) {/usr/share/cursor/cursor --password-store="gnome-libsecret" } </usr/share/pixmaps/co.anysphere.cursor.png>
+    [exec] (DB Browser for SQLite) {sqlitebrowser } </usr/share/icons/hicolor/256x256/apps/sqlitebrowser.png>
+    [exec] (Devin) {/usr/share/devin-desktop/devin-desktop } </usr/share/pixmaps/devin-desktop.png>
+    [exec] (Geany) {geany } </usr/share/icons/hicolor/16x16/apps/geany.png>
+    [exec] (Git Cola) {git-cola --prompt}
+    [exec] (Git DAG) {git-dag --prompt}
+    [exec] (IDLE) {/usr/bin/idle } </usr/share/pixmaps/idle.xpm>
+    [exec] (IDLE (using Python-3.11\)) {/usr/bin/idle-python3.11} </usr/share/pixmaps/python3.11.xpm>
+    [exec] (Icon Browser) {yad-icon-browser} </usr/share/icons/hicolor/16x16/apps/yad.png>
+    [exec] (Kiro) {/usr/share/kiro/kiro --password-store="gnome-libsecret" } </usr/share/pixmaps/code-oss.png>
+    [exec] (Meld) {meld }
+    [exec] (OpenCode) {"/opt/OpenCode/@opencode-aidesktop" } </usr/share/icons/hicolor/32x32/apps/@opencode-aidesktop.png>
+    [exec] (Qt 5 Assistant) {/usr/lib/qt5/bin/assistant} </usr/share/icons/hicolor/32x32/apps/assistant-qt5.png>
+    [exec] (Qt 5 Designer) {/usr/lib/qt5/bin/designer } </usr/share/icons/hicolor/128x128/apps/designer-qt5.png>
+    [exec] (Qt 5 Linguist) {/usr/lib/qt5/bin/linguist } </usr/share/icons/hicolor/16x16/apps/linguist-qt5.png>
+    [exec] (Qt Creator) {qtcreator } </usr/share/icons/hicolor/16x16/apps/QtProject-qtcreator.png>
+    [exec] (Trae) {/usr/share/trae/trae --password-store="gnome-libsecret" } </usr/share/pixmaps/trae.png>
+    [exec] (VSCodium) {/usr/share/codium/codium } </usr/share/pixmaps/vscodium.png>
+    [exec] (Visual Studio Code) {/usr/share/code/code --password-store="gnome-libsecret" --unity-launch } </usr/share/pixmaps/vscode.png>
+    [exec] (Windsurf) {/usr/share/windsurf/windsurf --password-store="gnome-libsecret" }
+    [exec] (gitg) {gitg --no-wd --standalone }
+    [exec] (qgit) {qgit} </usr/share/icons/hicolor/48x48/apps/qgit.png>
+  [end] # (Development)
+  [submenu] (Games) </usr/share/icons/Adwaita/48x48/legacy/applications-games.png>
+    [exec] (LBreakout2) {/usr/games/lbreakout2} </usr/share/pixmaps/lbreakout2.xpm>
+    [exec] (Mahjongg) {gnome-mahjongg}
+    [exec] (Peg-E) {peg-e} </usr/share/icons/hicolor/16x16/apps/peg-e.png>
+    [exec] (Swell Foop) {swell-foop} </usr/share/icons/hicolor/16x16/apps/org.gnome.SwellFoop.png>
+  [end] # (Games)
+  [submenu] (Graphics) </usr/share/icons/Adwaita/24x24/legacy/applications-graphics.png>
+    [exec] (Document Scanner) {simple-scan}
+    [exec] (Flameshot) {flameshot} </usr/share/icons/hicolor/48x48/apps/org.flameshot.Flameshot.png>
+    [exec] (Fontmatrix) {fontmatrix} </usr/share/pixmaps/fontmatrix.png>
+    [exec] (GNU Image Manipulation Program) {gimp-2.10 } </usr/share/icons/hicolor/16x16/apps/gimp.png>
+    [exec] (Gpick) {gpick } </usr/share/icons/hicolor/48x48/apps/gpick.png>
+    [exec] (Gwenview) {gwenview } </usr/share/icons/hicolor/16x16/apps/gwenview.png>
+    [exec] (Inkscape) {inkscape } </usr/share/icons/hicolor/16x16/apps/org.inkscape.Inkscape.png>
+    [exec] (Okular) {okular } </usr/share/icons/hicolor/16x16/apps/okular.png>
+    [exec] (Shotwell) {shotwell } </usr/share/icons/hicolor/16x16/apps/org.gnome.Shotwell.png>
+    [exec] (Shotwell Profile Browser) {shotwell -b} </usr/share/icons/hicolor/16x16/apps/org.gnome.Shotwell.png>
+    [exec] (gThumb) {gthumb } </usr/share/icons/hicolor/16x16/apps/org.gnome.gThumb.png>
+    [exec] (nomacs) {nomacs }
+    [exec] (showFoto) {showfoto  } </usr/share/icons/hicolor/16x16/apps/showfoto.png>
+  [end] # (Graphics)
+  [submenu] (Multimedia) </usr/share/icons/gnome/16x16/categories/applications-multimedia.png>
+    [exec] (AT1) {zita-at1}
+    [exec] (Alsamixer) {x-terminal-emulator -e alsamixer} </org/gtk/libgtk/icons/16x16/actions/multimedia-volume-control.png>
+    [exec] (Ardour7) {/usr/bin/ardour }
+    [exec] (Asunder CD Ripper) {asunder } </usr/share/icons/hicolor/128x128/apps/asunder.png>
+    [exec] (Audacious) {audacious } </usr/share/icons/hicolor/48x48/apps/audacious.png>
+    [exec] (Audacity) {env GDK_BACKEND=x11 audacity }
+    [exec] (Calf Plugin Pack for JACK) {calfjackhost} </usr/share/icons/hicolor/16x16/apps/calf.png>
+    [exec] (Clementine) {clementine } </usr/share/icons/hicolor/64x64/apps/org.clementine_player.Clementine.png>
+    [exec] (Drumstick ALSA MIDI Player) {drumstick-guiplayer } </usr/share/icons/hicolor/16x16/apps/drumstick.png>
+    [exec] (Drumstick Drum Grid) {drumstick-drumgrid} </usr/share/icons/hicolor/16x16/apps/drumstick.png>
+    [exec] (Drumstick Virtual Piano) {drumstick-vpiano} </usr/share/icons/hicolor/16x16/apps/drumstick.png>
+    [exec] (FF Multi Converter) {ffmulticonverter} </usr/share/pixmaps/ffmulticonverter.png>
+    [exec] (JACK Keyboard) {jack-keyboard} </usr/share/pixmaps/jack-keyboard.png>
+    [exec] (KMid) {kmid }
+    [exec] (Kdenlive) {kdenlive } </usr/share/icons/hicolor/16x16/apps/kdenlive.png>
+    [exec] (Kid3-qt) {kid3-qt } </usr/share/icons/hicolor/16x16/apps/kid3-qt.png>
+    [exec] (MediaInfo) {mediainfo-gui } </usr/share/icons/hicolor/256x256/apps/mediainfo.png>
+    [exec] (Meterbridge) {/usr/bin/meterbridge -t vu alsa_pcm:playback_1 alsa_pcm:playback_2} </usr/share/pixmaps/meterbridge32x32.xpm>
+    [exec] (MusE) {muse} </usr/share/icons/hicolor/64x64/apps/muse.png>
+    [exec] (MusicBrainz Picard) {picard } </usr/share/icons/hicolor/16x16/apps/org.musicbrainz.Picard.png>
+    [exec] (PNMixer) {pnmixer} </usr/share/icons/hicolor/128x128/apps/pnmixer.png>
+    [exec] (PulseAudio Volume Control) {pavucontrol} </org/gtk/libgtk/icons/16x16/actions/multimedia-volume-control.png>
+    [exec] (QjackCtl) {qjackctl} </usr/share/icons/hicolor/32x32/apps/org.rncbc.qjackctl.png>
+    [exec] (Qmmp) {qmmp } </usr/share/icons/hicolor/16x16/apps/qmmp.png>
+    [exec] (Qsynth) {qsynth} </usr/share/icons/hicolor/32x32/apps/org.rncbc.qsynth.png>
+    [exec] (REAPER) {"/opt/REAPER/reaper" } </usr/share/icons/hicolor/256x256/apps/cockos-reaper.png>
+    [exec] (SimpleScreenRecorder) {simplescreenrecorder --logfile} </usr/share/icons/hicolor/16x16/apps/simplescreenrecorder.png>
+    [exec] (Strawberry) {strawberry } </usr/share/icons/hicolor/48x48/apps/strawberry.png>
+    [exec] (TiMidity++ MIDI sequencer) {/usr/bin/timidity -ia } </usr/share/pixmaps/timidity.xpm>
+    [exec] (VLC media player) {/usr/bin/vlc --started-from-file } </usr/share/icons/hicolor/16x16/apps/vlc.png>
+    [exec] (VMPK) {vmpk} </usr/share/icons/hicolor/16x16/apps/vmpk.png>
+    [exec] (Virtual MIDI Keyboard) {vkeybd} </usr/share/icons/hicolor/16x16/apps/vkeybd.png>
+    [exec] (Xfburn) {xfburn} </usr/share/icons/hicolor/16x16/stock/media/stock_xfburn.png>
+    [exec] (Zita-Rev1) {zita-rev1}
+    [exec] (Zita-mu1) {zita-mu1}
+    [exec] (drumkv1) {drumkv1_jack } </usr/share/icons/hicolor/32x32/apps/org.rncbc.drumkv1.png>
+    [exec] (gMTP) {gmtp} </usr/share/pixmaps/gmtpicon.png>
+    [exec] (guvcview (webcam\)) {guvcview} </usr/share/icons/Adwaita/512x512/devices/camera-web.png>
+    [exec] (puddletag) {puddletag } </usr/share/pixmaps/puddletag.png>
+    [exec] (samplv1) {samplv1_jack } </usr/share/icons/hicolor/32x32/apps/org.rncbc.samplv1.png>
+    [exec] (synthv1) {synthv1_jack } </usr/share/icons/hicolor/32x32/apps/org.rncbc.synthv1.png>
+    [exec] (wxChordPro) {wxchordpro}
+  [end] # (Multimedia)
+  [submenu] (Network) </usr/share/icons/Adwaita/24x24/legacy/applications-internet.png>
+    [exec] (Brave Web Browser) {/usr/bin/brave-browser-stable } </usr/local/share/icons/hicolor/16x16/apps/brave-browser.png>
+    [exec] (Browse Mirrored Websites) {webhttrack browse} </usr/share/icons/hicolor/16x16/apps/httrack.png>
+    [exec] (Chromium Web Browser) {/usr/bin/chromium } </usr/share/icons/hicolor/16x16/apps/chromium.png>
+    [exec] (Firefox) {firefox } </usr/share/pixmaps/firefox.png>
+    [exec] (Google Chrome) {/usr/bin/google-chrome-stable } </usr/local/share/icons/hicolor/16x16/apps/google-chrome.png>
+    [exec] (JDownloader 2) {"/home/wachin/AppsLinux/jd2/JDownloader2" } </home/wachin/AppsLinux/jd2/.install4j/JDownloader2.png>
+    [exec] (MX Viewer) {mx-viewer } </usr/share/icons/hicolor/24x24/apps/mx-viewer.png>
+    [exec] (SeaMonkey) {/opt/seamonkey/seamonkey } </usr/share/pixmaps/seamonkey-mozillabinaries.xpm>
+    [exec] (Thunderbird) {/usr/bin/thunderbird } </usr/share/icons/hicolor/16x16/apps/thunderbird.png>
+    [exec] (Transmission (Qt\)) {transmission-qt }
+    [exec] (WebHTTrack Website Copier) {webhttrack} </usr/share/icons/hicolor/16x16/apps/httrack.png>
+  [end] # (Network)
+  [submenu] (Office) </usr/share/icons/Adwaita/24x24/legacy/applications-office.png>
+    [exec] (AbiWord) {abiword } </usr/share/icons/hicolor/16x16/apps/abiword.png>
+    [exec] (Foliate) {com.github.johnfactotum.Foliate }
+    [exec] (LibreOffice Base) {libreoffice --base } </usr/share/icons/hicolor/16x16/apps/libreoffice-base.png>
+    [exec] (LibreOffice Calc) {libreoffice --calc } </usr/share/icons/hicolor/16x16/apps/libreoffice-calc.png>
+    [exec] (LibreOffice Draw) {libreoffice --draw } </usr/share/icons/hicolor/16x16/apps/libreoffice-draw.png>
+    [exec] (LibreOffice Impress) {libreoffice --impress } </usr/share/icons/hicolor/16x16/apps/libreoffice-impress.png>
+    [exec] (LibreOffice Math) {libreoffice --math } </usr/share/icons/hicolor/16x16/apps/libreoffice-math.png>
+    [exec] (LibreOffice Start Center) {libreoffice } </usr/share/icons/hicolor/16x16/apps/libreoffice-startcenter.png>
+    [exec] (LibreOffice Writer) {libreoffice --writer } </usr/share/icons/hicolor/16x16/apps/libreoffice-writer.png>
+    [exec] (Master PDF Editor 4) {cd /opt/master-pdf-editor-4 ; /opt/master-pdf-editor-4/masterpdfeditor4 } </opt/master-pdf-editor-4/masterpdfeditor4.png>
+    [exec] (Orage Calendar) {orage } </usr/share/icons/hicolor/16x16/apps/org.xfce.orage.png>
+    [exec] (PDF Arranger) {pdfarranger } </usr/share/icons/hicolor/16x16/apps/com.github.jeromerobert.pdfarranger.png>
+    [exec] (PDF Studio Viewer 2024) {"/home/wachin/pdfstudioviewer2024/pdfstudioviewer2024" } </home/wachin/pdfstudioviewer2024/.install4j/pdfstudioviewer2024.png>
+    [exec] (PDFsam Basic) {pdfsam }
+    [exec] (RedNotebook) {rednotebook}
+    [exec] (ghostwriter) {ghostwriter } </usr/share/icons/hicolor/16x16/apps/ghostwriter.png>
+    [exec] (qpdfview) {qpdfview --unique }
+  [end] # (Office)
+  [submenu] (Other) </usr/share/icons/Adwaita/48x48/legacy/applications-other.png>
+    [exec] (Chroot Rescue Scan) {x-terminal-emulator -e sudo chroot-rescue-scan --pause}
+    [exec] (Live-USB Kernel Updater) {x-terminal-emulator -e /usr/bin/live-kernel-updater --pause} </usr/share/pixmaps/live-usb-kernel-updater.png>
+    [exec] (Proton Mail) {/opt/google/chrome/google-chrome --profile-directory=Default --app-id=jnpecgipniidlgicjocehkhajgdnjekh} </home/wachin/.local/share/icons/hicolor/32x32/apps/chrome-jnpecgipniidlgicjocehkhajgdnjekh-Default.png>
+    [exec] (WPS Office) {/usr/bin/wps } </usr/share/icons/hicolor/16x16/mimetypes/wps-office2023-kprometheus.png>
+    [exec] (WPS PDF) {/usr/bin/wpspdf } </usr/share/icons/hicolor/16x16/mimetypes/wps-office2023-pdfmain.png>
+    [exec] (WPS Presentation) {/usr/bin/wpp } </usr/share/icons/hicolor/16x16/mimetypes/wps-office2023-wppmain.png>
+    [exec] (WPS Spreadsheets) {/usr/bin/et } </usr/share/icons/hicolor/16x16/mimetypes/wps-office2023-etmain.png>
+    [exec] (WPS Writer) {/usr/bin/wps } </usr/share/icons/hicolor/16x16/mimetypes/wps-office2023-wpsmain.png>
+  [end] # (Other)
+  [submenu] (Settings) </usr/share/icons/Adwaita/24x24/legacy/preferences-desktop.png>
+    [exec] (About Me) {/usr/bin/mugshot}
+    [exec] (Adblock) {block-advert-launcher} </usr/share/pixmaps/advert-block.png>
+    [exec] (Advanced Network Configuration) {nm-connection-editor} </usr/share/icons/Adwaita/24x24/legacy/preferences-system-network.png>
+    [exec] (Bluetooth Manager) {blueman-manager} </usr/share/icons/hicolor/16x16/status/blueman.png>
+    [exec] (Brightness Systray) {mx-tweak --tray &} </usr/share/icons/hicolor/48x48/apps/brightness-systray.png>
+    [exec] (Customize Look and Feel) {lxappearance} </usr/share/icons/Adwaita/24x24/legacy/preferences-desktop-theme.png>
+    [exec] (Firewall Configuration) {gufw} </usr/share/icons/hicolor/48x48/apps/gufw.png>
+    [exec] (LightDM GTK+ Greeter settings) {lightdm-gtk-greeter-settings-pkexec} </usr/share/icons/hicolor/16x16/apps/lightdm-gtk-greeter-settings.png>
+    [exec] (MX Tools) {mx-tools} </usr/share/icons/hicolor/96x96/apps/mx-tools.png>
+    [exec] (MX Tweak) {mx-tweak} </usr/share/icons/hicolor/64x64/apps/mx-tweak.png>
+    [exec] (Monitor Settings) {lxrandr} </usr/share/icons/hicolor/48x48/status/video-display.png>
+    [exec] (Onboard Settings) {onboard-settings} </usr/share/icons/hicolor/16x16/apps/onboard.png>
+    [exec] (Papirus Folder Colors) {papirus-folder-colors}
+    [exec] (Print Settings) {system-config-printer} </usr/share/icons/Adwaita/16x16/devices/printer.png>
+    [exec] (Qt5 Settings) {qt5ct} </usr/share/icons/Adwaita/24x24/legacy/preferences-desktop-theme.png>
+    [exec] (Qt6 Settings) {qt6ct} </usr/share/icons/Adwaita/24x24/legacy/preferences-desktop-theme.png>
+    [exec] (Removable Drives and Media) {thunar-volman-settings} </usr/share/icons/hicolor/16x16/apps/org.xfce.volman.png>
+    [exec] (System Keyboard) {system-keyboard-qt-launcher}
+    [exec] (Thunar Preferences) {thunar-settings} </usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png>
+    [exec] (Xfce Terminal Settings) {xfce4-terminal --preferences} </usr/share/icons/hicolor/16x16/apps/org.xfce.terminal-settings.png>
+  [end] # (Settings)
+  [submenu] (System) </usr/share/icons/Adwaita/24x24/legacy/applications-system.png>
+    [exec] (About MX Linux) {mx-welcome --about} </usr/share/icons/hicolor/48x48/apps/mx-welcome.png>
+    [exec] (Bash Config) {bash-config} </usr/share/icons/Adwaita/24x24/legacy/preferences-system.png>
+    [exec] (Deb Installer) {deb-installer } </usr/share/pixmaps/deb-installer.png>
+    [exec] (Disk Manager) {/usr/bin/disk-manager-launcher} </usr/share/icons/hicolor/16x16/apps/disk-manager.png>
+    [exec] (Disk Usage Analyzer) {baobab }
+    [exec] (Dolphin) {dolphin } </usr/share/icons/Adwaita/24x24/legacy/system-file-manager.png>
+    [exec] (FAQ) {mx-faq} </usr/share/icons/Adwaita/24x24/legacy/help-browser.png>
+    [exec] (Format USB) {formatusb} </usr/share/icons/hicolor/48x48/apps/formatusb.png>
+    [exec] (GDebi Package Installer) {gdebi-gtk } </usr/share/icons/gnome/16x16/mimetypes/gnome-mime-application-x-deb.png>
+    [exec] (GParted) {/usr/sbin/gparted } </usr/share/icons/hicolor/16x16/apps/gparted.png>
+    [exec] (GSmartControl) {"/usr/bin/gsmartcontrol-root"} </usr/share/icons/hicolor/16x16/apps/gsmartcontrol.png>
+    [exec] (Hardinfo2) {hardinfo2}
+    [exec] (Htop) {/usr/bin/x-terminal-emulator -e htop} </usr/share/pixmaps/htop.png>
+    [exec] (Job Scheduler) {job-scheduler}
+    [exec] (Konsole) {konsole} </usr/share/icons/Adwaita/24x24/legacy/utilities-terminal.png>
+    [exec] (MX Boot Options) {mx-boot-options}
+    [exec] (MX Boot Repair) {mx-boot-repair} </usr/share/icons/hicolor/256x256/apps/mx-boot-repair.png>
+    [exec] (MX Cleanup) {mx-cleanup} </usr/share/icons/hicolor/256x256/apps/mx-cleanup.png>
+    [exec] (MX Conky) {mx-conky} </usr/share/icons/hicolor/64x64/apps/mx-conky.png>
+    [exec] (MX Date & Time) {mx-datetime} </usr/share/pixmaps/mx-datetime.png>
+    [exec] (MX Fix GPG keys) {/usr/bin/x-terminal-emulator -e pkexec checkaptgpg --wait-at-end} </usr/share/pixmaps/checkaptgpg.png>
+    [exec] (MX Live USB Maker) {mx-live-usb-maker} </usr/share/icons/hicolor/256x256/apps/mx-live-usb-maker.png>
+    [exec] (MX Locale) {mx-locale} </usr/share/icons/Adwaita/24x24/legacy/preferences-desktop-locale.png>
+    [exec] (MX Network Assistant) {mx-network-assistant} </usr/share/icons/hicolor/48x48/apps/mx-network-assistant.png>
+    [exec] (MX Package Installer) {mx-packageinstaller} </usr/share/icons/hicolor/64x64/apps/mx-packageinstaller.png>
+    [exec] (MX RemasterCC) {mx-remastercc} </usr/share/icons/Adwaita/24x24/legacy/preferences-desktop.png>
+    [exec] (MX Repo Manager) {mx-repo-manager} </usr/share/icons/hicolor/512x512/apps/mx-repo-manager.png>
+    [exec] (MX Samba Config) {mx-samba-config}
+    [exec] (MX Select Sound) {mx-select-sound} </usr/share/icons/hicolor/64x64/apps/mx-select-sound.png>
+    [exec] (MX Service Manager) {mx-service-manager} </usr/share/icons/hicolor/48x48/apps/mx-service-manager.png>
+    [exec] (MX Snapshot) {mx-snapshot} </usr/share/icons/hicolor/48x48/apps/mx-snapshot.png>
+    [exec] (MX Tour) {mx-tour} </usr/share/icons/hicolor/48x48/apps/mx-tour.png>
+    [exec] (MX USB Unmounter) {mx-usb-unmounter} </usr/share/pixmaps/mx-usb-unmounter.png>
+    [exec] (MX Updater) {/usr/bin/apt-notifier-unhide-Icon} </usr/share/icons/hicolor/16x16/apps/apt-notifier.png>
+    [exec] (MX User Manager) {mx-user} </usr/share/icons/hicolor/256x256/apps/mx-user.png>
+    [exec] (MX User Manual) {mx-manual} </usr/share/icons/Adwaita/24x24/legacy/help-browser.png>
+    [exec] (MX Welcome) {mx-welcome} </usr/share/icons/hicolor/48x48/apps/mx-welcome.png>
+    [exec] (Nvidia driver installer) {/usr/bin/x-terminal-emulator -e pkexec /usr/bin/ddm-mx -i nvidia} </usr/share/pixmaps/nvidia-ddm-mx.png>
+    [exec] (Oracle VirtualBox) {VirtualBox } </usr/share/icons/hicolor/16x16/apps/virtualbox.png>
+    [exec] (QTerminal) {qterminal} </usr/share/icons/Adwaita/24x24/legacy/utilities-terminal.png>
+    [exec] (QTerminal drop down) {qterminal --drop} </usr/share/icons/Adwaita/24x24/legacy/utilities-terminal.png>
+    [exec] (Quick System Info) {quick-system-info-gui} </usr/share/icons/hicolor/48x48/apps/mx-qsi.png>
+    [exec] (Synaptic Package Manager) {synaptic-pkexec} </usr/share/icons/hicolor/48x48/apps/synaptic.png>
+    [exec] (Task Manager) {xfce4-taskmanager} </usr/share/icons/hicolor/16x16/apps/org.xfce.taskmanager.png>
+    [exec] (Thunar File Manager) {thunar } </usr/share/icons/hicolor/16x16/apps/org.xfce.filemanager.png>
+    [exec] (Timeshift) {timeshift-launcher} </usr/share/icons/hicolor/16x16/apps/timeshift.png>
+    [exec] (UEFI Manager) {uefi-manager} </usr/share/icons/hicolor/48x48/apps/uefi-manager.png>
+    [exec] (UXTerm) {uxterm}
+    [exec] (User Installed Packages) {user-installed-packages}
+    [exec] (VMware Workstation) {/usr/bin/vmware } </usr/share/icons/hicolor/16x16/apps/vmware-workstation.png>
+    [exec] (Virtual Network Editor) {/usr/bin/vmware-netcfg} </usr/share/icons/hicolor/16x16/apps/vmware-netcfg.png>
+    [exec] (XTerm) {xterm}
+    [exec] (Xfce Terminal) {xfce4-terminal} </usr/share/icons/hicolor/16x16/apps/org.xfce.terminal.png>
+    [exec] (dconf Editor) {dconf-editor}
+    [exec] (luckyBackup (super user\)) {/usr/bin/luckybackup-pkexec} </usr/share/pixmaps/luckybackup.png>
+  [end] # (System)
+[end] # (Applications)

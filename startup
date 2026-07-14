@@ -1,0 +1,83 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+xmodmap "/home/wachin/.Xmodmap"
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+#
+# Debian-local change:
+#   - fbautostart has been added with a quick hack to check to see if it
+#     exists. If it does, we'll start it up by default.
+
+# Wallpaper
+fbsetbg -f ~/.fluxbox/backgrounds/warty-tux-ubuntu-1360x768.png
+
+# PolicyKit
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
+# --- SOLUCIÓN AÑADIDA: Iniciar el servicio de llavero (Keyring) para VS Code ---
+# Esto resuelve el error "An OS keyring couldn't be identified"
+eval $(gnome-keyring-daemon --start --components=secrets) &
+# -----------------------------------------------------------------------------
+
+
+# Mantener actualizados los directorios XDG del usuario
+xdg-user-dirs-update
+xdg-user-dirs-gtk-update
+
+# Red en bandeja o área de notificación compatible
+nm-applet &
+
+# Mixer
+sleep 2; pnmixer &
+
+# Activador de teclado numerico para teclados que lo tengan
+numlockx on &
+
+# Indicador y selector de teclado X11
+/usr/bin/gxkb &
+
+#setxkbmap -layout es & # Teclado Español europeo
+
+ksnip &
+kate &
+thunar &
+dolphin &
+#nemo &
+xfce4-notes &
+xfce4-terminal &
+google-chrome-stable &
+sleep 5; lxrandr &
+
+# Audio (PipeWire)
+#pipewire &
+#pipewire-pulse &
+#wireplumber &
+
+python3 /home/wachin/Dev/xsct_gui-dev/xsct_gui/xsct_gui.py &
+
+# Lanzar el bus de accesibilidad; algunas apps GTK/Qt lo esperan
+/usr/libexec/at-spi-bus-launcher --launch-immediately &
+
+# Si existe, dejar que fbautostart procese autostarts compatibles
+which fbautostart > /dev/null
+if [ $? -eq 0 ]; then
+    fbautostart
+fi
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/wachin/.fluxbox/log"
