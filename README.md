@@ -26,16 +26,14 @@ Reason:
 This is more targeted and less invasive than changing the global focus model for all windows.
 
 
-
-
-
 # RisenPC-Fluxbox-ES
+
 MX Linux 23 tiene una versión Fluxbox pero no me gusta como queda, entonces esta es mi versión en español para Ordenadores con pocos recursos
 
 # Requerimientos
 Se requiere lo sigiente:
 
-- MX Linux 23 (XFCE)
+- MX Linux 23 (XFCE) [https://sourceforge.net/projects/mx-linux/files/Old/](https://sourceforge.net/projects/mx-linux/files/Old/)
 
 # Instalación de Fluxbox y dependencias
 Con lo siguiente instalaremos las dependencias necesarias:
@@ -43,14 +41,12 @@ Con lo siguiente instalaremos las dependencias necesarias:
 **Dependencias**
 
 ```bash
-sudo apt-get install git fluxbox lxappearance lxrandr pnmixer numlockx qt5ct \
+sudo apt-get install fluxbox lxappearance lxrandr pnmixer numlockx qt5ct \
 nitrogen gnome-icon-theme gxkb xfce4-appfinder network-manager-gnome
 ```
-dele Enter y poner "s" de que si acepta
 
-**Nota:** Para instalarlo en MX Linux 19 debe quitar el paquete gammy.   
 
-# Borre los estilos del paquete de Fluxbox  
+# Borre los estilos del paquete de Fluxbox  (Opcional)
 
 El comando anterior instalará fluxbox pero ese trae unos temas muy feos, yo nunca los uso, yo los borro, le recomiendo hacer lo mismo, ponga en la terminal:
 
@@ -58,24 +54,23 @@ El comando anterior instalará fluxbox pero ese trae unos temas muy feos, yo nun
 sudo rm -fr /usr/share/fluxbox/styles/
 ```
 
-No se preocupe aquí usaremos los de MX Fluxbox
+No se preocupe aquí usaremos unos
 
 # Borrar los archivos originales de Fluxbox si Ud los usaba
+
 Si usted estaba usando Fluxbox debe haber una carpeta escondida (Si no es este su caso omita este paso) , veala con Ctrl + H
 
 .fluxbox
 
-esa carpeta hay que borrarla si es que la tenía, así:
+si esta carpeta usted ya la tenía creada hay que borrarla, puede hacerlo manualmente, o así:
 
 ```
 sudo rm -fr ~/.fluxbox
 ```
 
 # Instalar RisenPC Fluxbox Español
-A continuación les dejaré dos maneras de instalar RisenPC Fluxbox ES, la primera es para un usuario normal:
 
-## Instalar RisenPC Fluxbox Español para usuario normal
-Copie todo de una sola vez  (también si no le funciona copie uno por uno):
+Estando en su HOME, kcopie todo de una sola vez  (también si no le funciona en su terminal copie uno por uno):
 
 ```bash
     git clone https://github.com/wachin/Risen-PC_Fluxbox_MX_Linux-23-XFCE
