@@ -142,26 +142,19 @@ aquí un captura:
 
 Con esto tendrá iconos de la mayoría de las aplicaciones en el menú de fluxbox
 
-**Nota**: Si lo sedea puede borrar la carpeta xdgmenumaker
+**Nota**: Si lo sedea puede borrar la carpeta xdgmenumaker con:
 
-    sudo rm -fr xdgmenumaker
-
+```bash
+sudo rm -fr xdgmenumaker
+```
 
 ## Creando el Menu de fluxbox, con xdgmenumaker
 
-Antes de hacer esto debe:
+Ponga en una terminal:
 
-**Reiniciar y entrar en la sesión de Fluxbox**
-
-![](vx_images/547226287889799.png)
-
-la anterior y la siguiente imagen son de MX Linux 19:
-
-![](vx_images/547226287889800.png)
-
-una vez que ha entrado, ponga en una terminal:
-
-    xdgmenumaker -i -s16 -f fluxbox > ~/.fluxbox/xdg_menu
+```bash
+xdgmenumaker -i -s16 -f fluxbox > ~/.fluxbox/xdg_menu
+```
 
 esto es necesario hacerlo sólo una vez
 
@@ -172,7 +165,19 @@ Para ver el menú de clic derecho en el escritorio o clic derecho en una de las 
 ![](https://raw.githubusercontent.com/wachin/RisenPC-Fluxbox-ES/main/RisenPC-Fluxbox.png)
 
 
+## Cierre sesión y vuelva a entrar
+
+Cierre sesión y vuelva a entrar y verá disponible a fluxbox
+
+![](vx_images/547226287889799.png)
+
+la anterior y la siguiente imagen son de MX Linux 19:
+
+![](vx_images/547226287889800.png)
+
+
 ## Actualizar el menú de Fluxbox cada vez que instale alguna aplicación
+
 Esto debe saberlo pues en esta instalación se utiliza a xdgmenumaker pero hay que actualizar el menu después que uno instala alguna aplicación, para hacerlo clic en:
 
 **Actualizar menu de Apps**  
@@ -249,9 +254,9 @@ Para crear atajos de teclado personalizados en Fluxbox en Linux, debes modificar
 
    Para editar el archivo, abre una terminal y ejecuta el siguiente comando:
 
-   ```bash
-   nano ~/.fluxbox/keys
-   ```
+```bash
+nano ~/.fluxbox/keys
+```
 
 ## 2. **Estructura de los atajos de teclado**
    En el archivo `keys`, cada línea se refiere a un atajo de teclado. Un atajo de teclado tiene tres componentes principales:
@@ -266,35 +271,36 @@ Tecla Windows (Super) = `Mod4`
    - **Comando a ejecutar**: El comando que se ejecutará cuando el atajo de teclado se active. Esto puede ser abrir una aplicación, ejecutar un script, mostrar un menú, etc.
 
 ## 3. **Sintaxis para crear un atajo**
-   La sintaxis básica para un atajo de teclado es:
 
-   ```
-   <modificadores> <tecla> :Exec <comando>
-   ```
+La sintaxis básica para un atajo de teclado es:
 
-   - `<modificadores>` puede ser una combinación de teclas como `Control`, `Mod1`, `Mod4`, etc.
-   - `<tecla>` es la tecla que se presiona junto con los modificadores.
-   - `<comando>` es el comando que deseas ejecutar cuando el atajo sea activado.
+```
+<modificadores> <tecla> :Exec <comando>
+```
+
+- `<modificadores>` puede ser una combinación de teclas como `Control`, `Mod1`, `Mod4`, etc.
+- `<tecla>` es la tecla que se presiona junto con los modificadores.
+- `<comando>` es el comando que deseas ejecutar cuando el atajo sea activado.
 
    A continuación, algunos ejemplos de atajos de teclado comunes:
 
    - **Abrir el navegador web**: Para abrir Firefox, el atajo sería:
 
-     ```
-     Control Mod1 f :Exec firefox
-     ```
+```
+Control Mod1 f :Exec firefox
+```
 
    - **Abrir una terminal**: Para abrir la terminal con el atajo `Ctrl + Alt + T`:
 
-     ```
-     Control Mod1 t :Exec xterm
-     ```
+```
+Control Mod1 t :Exec xterm
+```
 
    - **Cerrar una ventana**: Para cerrar la ventana activa con el atajo `Ctrl + Alt + C`:
 
-     ```
-     Control Mod1 c :Close
-     ```
+```
+Control Mod1 c :Close
+```
 
    - **Alternar entre ventanas**: Para alternar entre las ventanas abiertas, el atajo sería:
 
@@ -304,34 +310,50 @@ Tecla Windows (Super) = `Mod4`
 
    - **Abrir el administrador de archivos**: Para abrir Nautilus (el explorador de archivos) con el atajo `Ctrl + Alt + E`:
 
-     ```
-     Control Mod1 e :Exec nautilus
-     ```
+```
+Control Mod1 e :Exec nautilus
+```
 ** Nota:** Se puede cambiar por: dolphin, nemo, thunar, etc
 
 #### 4. **Reiniciar Fluxbox**
    Después de agregar o modificar los atajos de teclado, es necesario recargar la configuración de Fluxbox para que los cambios surtan efecto. Para hacerlo, puedes ejecutar el siguiente comando:
 
-   ```bash
-   fluxbox-remote restart
-   ```
+```bash
+fluxbox-remote restart
+```
 
 #### 5. **Ejemplo de un archivo de atajos de teclado completo**
-   Los siguientes atajos en `~/.fluxbox/keys` son unos atajos que estoy utilizando::
 
-   ```
-   # Abrir AppFinder con atajo de teclado
-   Control Mod1 a :Exec xfce4-appfinder
+Los siguientes atajos en `~/.fluxbox/keys` son unos atajos que estoy utilizando::
 
-   # Abrir ksnip para capturar un rectángulo con el cursor
-   Control Mod1 k :Exec ksnip --rectarea
+```
+# Abrir AppFinder con atajo de teclado
+# Esto significa que la Tecla Ctrl (Control) y Alt (Mod1) y la tecla A activarán a xfce4-appfinder
+# Ctrl + Alt + A lanza xfce4-appfinder
+Control Mod1 a :Exec xfce4-appfinder
 
-   # Abrir el menu de aplicaciones con atajo de teclado
-   Mod4 m :RootMenu
+# Abrir ksnip para capturar un rectángulo con el cursor
+# Esto significa que la Tecla Ctrl (Control) y Alt (Mod1) y la tecla K ejecutarán a Ksnip
+# Ctrol + Alt + K lanza Ksnip para capturar un rectángulo
+Control Mod1 k :Exec ksnip --rectarea
 
-   # Poner una ventana siempre encima
-   Mod1 v :ToggleCmd {MacroCmd {RaiseLayer} {RaiseLayer}} {MacroCmd {LowerLayer} {LowerLayer}}
-   ```
+# Abrir el menu de aplicaciones con atajo de teclado (en el lugar donde esté el cursor)
+# Esto significa que la tecla de Windows (Mod4) y la tecla M abrirán el menú de las aplicaciones
+# Super + M
+Mod4 m :RootMenu
+
+# Cómo poner una ventana siempre encima en Fluxbox
+# Esto significa que la tecla Alt (Mod1) y la tecla V harán que la ventana que esté primero abiera se quedará allí
+# https://linux.byexamples.com/archives/306/makes-your-windows-stay-on-top-toggle-it/
+# Alt + V
+Mod1 v :ToggleCmd {MacroCmd {RaiseLayer} {RaiseLayer}} {MacroCmd {LowerLayer} {LowerLayer}}
+
+# Minimizar ventana activa
+Mod4 n :Minimize
+
+# Mostrar/ocultar escritorio (minimizar todas)
+Mod4 d :ShowDesktop
+```
 
 ### Tabla con mis atajos de teclado
 
@@ -343,6 +365,8 @@ Resumen de mis atajos de teclado:
 | **Ctrl + Alt + K**          | Abrir Ksnip para capturar un rectángulo  | `ksnip --rectarea`                      |
 | **Super (Windows) + M**     | Abrir el menú de aplicaciones de Fluxbox | `:RootMenu`                             |
 | **Alt + V**                 | Poner una ventana siempre encima         | `:ToggleCmd {MacroCmd {RaiseLayer} {RaiseLayer}} {MacroCmd {LowerLayer} {LowerLayer}}` |
+| **Super (Windows) + N**     | Minimizar la ventana activa              | `:Minimize`                             |
+| **Super (Windows) + D**     | Mostrar/ocultar escritorio               | `:ShowDesktop`                          |
 
 Con estos pasos y ejemplos, puedes agregar más atajos personalizados para cualquier aplicación o acción que desees realizar en Fluxbox.
 
