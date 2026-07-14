@@ -42,7 +42,8 @@ Con lo siguiente instalaremos las dependencias necesarias:
 
 ```bash
 sudo apt-get install fluxbox lxappearance lxrandr pnmixer numlockx qt5ct \
-nitrogen gnome-icon-theme gxkb xfce4-appfinder network-manager-gnome
+nitrogen gnome-icon-theme gxkb xfce4-appfinder network-manager-gnome \
+pavucontrol
 ```
 
 
@@ -206,7 +207,7 @@ y se abrirá el control de volumen:
 
 Se configura en:
 
-**Menú --> Herramientas --> Ajustes Qt "Aplicaciones KDE"**  
+**Menú --> Herramientas del Sistema --> Ajustes QT5 "Aplicaciones KDE"**
 
 ![](vx_images/478325900615604.png)
 
@@ -359,14 +360,14 @@ Mod4 d :ShowDesktop
 
 Resumen de mis atajos de teclado:
 
-| Combinación de teclas      | Acción                                    | Comando ejecutado                       |
-|----------------------------|-------------------------------------------|-----------------------------------------|
-| **Ctrl + Alt + A**          | Abrir AppFinder                          | `xfce4-appfinder`                       |
-| **Ctrl + Alt + K**          | Abrir Ksnip para capturar un rectángulo  | `ksnip --rectarea`                      |
-| **Super (Windows) + M**     | Abrir el menú de aplicaciones de Fluxbox | `:RootMenu`                             |
-| **Alt + V**                 | Poner una ventana siempre encima         | `:ToggleCmd {MacroCmd {RaiseLayer} {RaiseLayer}} {MacroCmd {LowerLayer} {LowerLayer}}` |
-| **Super (Windows) + N**     | Minimizar la ventana activa              | `:Minimize`                             |
-| **Super (Windows) + D**     | Mostrar/ocultar escritorio               | `:ShowDesktop`                          |
+|  Combinación de teclas  |                  Acción                  |                                   Comando ejecutado                                    |
+| ----------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------- |
+| **Ctrl + Alt + A**      | Abrir AppFinder                          | `xfce4-appfinder`                                                                      |
+| **Ctrl + Alt + K**      | Abrir Ksnip para capturar un rectángulo  | `ksnip --rectarea`                                                                     |
+| **Super (Windows) + M** | Abrir el menú de aplicaciones de Fluxbox | `:RootMenu`                                                                            |
+| **Alt + V**             | Poner una ventana siempre encima         | `:ToggleCmd {MacroCmd {RaiseLayer} {RaiseLayer}} {MacroCmd {LowerLayer} {LowerLayer}}` |
+| **Super (Windows) + N** | Minimizar la ventana activa              | `:Minimize`                                                                            |
+| **Super (Windows) + D** | Mostrar/ocultar escritorio               | `:ShowDesktop`                                                                         |
 
 Con estos pasos y ejemplos, puedes agregar más atajos personalizados para cualquier aplicación o acción que desees realizar en Fluxbox.
 
@@ -415,22 +416,42 @@ Alt + V
 **Nota:** La Tecla Alt se llama Mod1 en las configuraciones de los atajos de teclado de Fluxbox
 
 
-## Minimizar ventanas
-En con las teclas:
+## Minimizar ventana activa
+Con las teclas:
 
-Alt + Z
+Super + N
 
-le puse este atajo de teclado porque para mi es más fácil de usar, pero si ustedes quisieran le pueden poner otro
+se minimiza la ventana activa.
 
-**Nota**: Esto lo modifiqué del archivo "key" en # current window commands donde originalmente tenía:  Mod1 + F9
+**Nota**: Este atajo está configurado en el archivo `.fluxbox/keys` con:
 
- ## Minimizar todas las ventanas (no se puede)
- Pngo este título pues yo habría querido que hubiera una manerea de poder minimizar todas las ventanas de programas abiertas como en Windows (Super + D) pero no se puede, aunque se puede minimizando una por una
+```
+Mod4 n :Minimize
+```
+
+## Mostrar/ocultar escritorio
+Con las teclas:
+
+Super + D
+
+se muestra u oculta el escritorio con la acción `ShowDesktop` de Fluxbox.
+
+**Nota**: Este atajo está configurado en el archivo `.fluxbox/keys` con:
+
+```
+Mod4 d :ShowDesktop
+```
 
 
 # Control de brillo para evitar cansancio ocular
 
-Gammy está en los repositorios de MX Linux 21 y si ha hecho esta instalación allí pues ya está instalado pues lo he incluido en el archivo .fluxbox/startup al autoinicio
+En versiones anteriores usaba Gammy para el control de brillo, pero en el archivo actual `.fluxbox/startup` de este repositorio ya no está añadido al autoinicio. Actualmente allí está añadida esta línea para iniciar `xsct_gui.py`:
+
+```bash
+python3 /home/wachin/Dev/xsct_gui-dev/xsct_gui/xsct_gui.py &
+```
+
+Si usted no tiene ese programa en esa ruta, puede comentar o borrar esa línea del archivo `.fluxbox/startup`, o cambiarla por la herramienta de brillo que use en su sistema.
 
 Ese archivo lo puede abrir desde el menú:  
 
@@ -448,7 +469,13 @@ lo puede abrir a ese archivo con algún editor de texto, ejemplo en la siguiente
 
 ![](vx_images/547226287889786.png)
 
-por lo que cuando usted entre en la sesión, Gammy se abrirá a la derecha abajo entre los iconos, la siguiente imagen es de Gammy en MX Linux 21 (yo lo uso como indico en la imagen):  
+Si decide usar Gammy, puede añadirlo manualmente al archivo `.fluxbox/startup` con una línea como esta:
+
+```bash
+gammy &
+```
+
+La siguiente imagen es de Gammy en MX Linux 21:
 
 ![](vx_images/547226287889778.png)
 
@@ -485,7 +512,7 @@ al hacer eso ya se verán bien todos los estilos disponibles
 # Cambiar el idioma del teclado
 Yo vivo en el Ecuador en Latinoamérica y uso la Distribución para Español Latino y por eso lo he dejado configurado para usarlo, cic en:
 
-**Menú --> Preferencias > Startup "Aplicaciones que se cargan al inicio" ** 
+**Menú --> Preferencias de Fluxbox --> Startup "Aplicaciones que se cargarán al Inicio"**
 
 ![](vx_images/143144309268994.png)
 
@@ -511,7 +538,7 @@ Esto es util pues imaginese que usted está traduciendo algún documento y quier
 # Cambiar el wallpaper (Fondo de pantalla)
 La primera vez que lo vamos a usar es necesario reiniciar nitrogen, de clic en:
 
-**Menú --> Herramientas --> Resetear  Nitrogen en 1er uso y resetear para usar Dos Monitores**  
+**Menú --> Herramientas del Sistema --> Resetear Nitrogen en 1er uso, y resetear para usar Dos Monitores**
 
 ![](vx_images/378662901615609.png)
 
@@ -519,7 +546,7 @@ esa opción sirve para dos cosas, lo estamos usando para la primera
 
 después de esto si ya pueden dar clic en:
 
-**Menú --> Herramientas --> Cambiar el fondo del escritorio con Nitrogen -imagenes del sistema-  ** 
+**Menú --> Herramientas del Sistema --> Cambair el fondo del escritorio con Nitrogen - imagenes del sistema-**
 
 ![](vx_images/547226287889787.png)
 
@@ -547,7 +574,7 @@ le he puesto como nombre Wallpapers y dentro he puesto varios:
 
 para poder seleccionarlos desde Nitrogen, clic en:
 
-**Menú --> Herramientas --> Cambiar sus fondo de escritorio con Nitrogen -sus imagenes- ** 
+**Menú --> Herramientas del Sistema --> Cambiar sus fondos de escritorio con Nitrogen - sus imagenes-**
 
 ![](vx_images/547226287889818.png)
 
@@ -734,11 +761,7 @@ luego clic en y ponga:
 
 y **aceptar**
 
-![](./img/196002%20pongale%20un%20icono%20de%20terminal.png)
-
 y en la pestaña "**Condiciones de aparición**", marcar **Carpetas**:
-
-![](./img/1960021%20pestaña%20condiciones%20de%20apareción%20marcar%20Carpetas.png)
 
 y **Aceptar**
 
@@ -752,9 +775,7 @@ y me queda así:
 
 ![](vx_images/547226287889774.png)
 
-Cuando quiera abrir terminal le aparecerá disponible Gnome Terminal
-
-![](./img/1960024%20abrir%20con%20Gnome-terminal.png)
+Cuando quiera abrir terminal le aparecerá disponible Gnome Terminal.
 
 
 
@@ -791,7 +812,7 @@ Papirus
 
 para usarlo 
 
-**Menú --> Herramientas --> Personalizar apariencia y comportamiento**
+**Menú --> Herramientas del Sistema --> Personalizar apariencia y comportamiento**
 
 **Nota:** El menú principal de Fluxbox se lo puede abrir desde escritorio con clic derecho, o en las esquinas abajo izquierda o derecha abajo, o con el atajo de teclado Super + M
 
@@ -820,7 +841,7 @@ este tema de iconos es además compatible con las aplicaciones KDE si lo usaran 
 # Editar las opciones de Fluxbox (opcional)
 Para facil acceso les he dejado 
 
-En es escritorio clic derecho en el menú, o en las esquinas o Super + M y clic en **Preferencias**
+En es escritorio clic derecho en el menú, o en las esquinas o Super + M y clic en **Preferencias de Fluxbox**
 
 ![](vx_images/455513928941351.png)
 
