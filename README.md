@@ -858,11 +858,16 @@ Yo hice un fork de los temas de Zorin OS aquí:
 
 [https://github.com/wachin/zorin-desktop-themes](https://github.com/wachin/zorin-desktop-themes)
 
-Allí añadí el tema:
+Allí añadí estos temas:
 
-**Windows11-Light**
+- **Windows11-Light**
+- **Windows11-Dark**
+- **LinuxModern-Light**
+- **LinuxModern-Dark**
 
-Ese tema está basado en `ZorinBlue-Light`, pero ajustado para parecerse más al tema claro de Windows 11.
+Los temas `Windows11-Light` y `Windows11-Dark` están basados en los temas azules de Zorin, pero ajustados para parecerse más a Windows 11 claro y oscuro.
+
+Los temas `LinuxModern-Light` y `LinuxModern-Dark` están basados en los temas grises de Zorin, pero ajustados para dar una apariencia Linux moderna con acento verde azulado.
 
 Para instalarlos en MX Linux 23 para su usuario:
 
@@ -871,6 +876,9 @@ mkdir -p ~/.themes
 cp -a zorin-desktop-themes/Zorin*-Light ~/.themes/
 cp -a zorin-desktop-themes/Zorin*-Dark ~/.themes/
 cp -a zorin-desktop-themes/Windows11-Light ~/.themes/
+cp -a zorin-desktop-themes/Windows11-Dark ~/.themes/
+cp -a zorin-desktop-themes/LinuxModern-Light ~/.themes/
+cp -a zorin-desktop-themes/LinuxModern-Dark ~/.themes/
 sudo apt install gtk2-engines-murrine
 ```
 
