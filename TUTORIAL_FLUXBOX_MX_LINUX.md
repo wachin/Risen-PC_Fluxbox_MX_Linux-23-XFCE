@@ -453,6 +453,169 @@ Para mejorar eso, en `~/.fluxbox/apps` se puede añadir:
 
 Es una mejora específica para estas aplicaciones, sin cambiar todo el modelo global de foco de Fluxbox.
 
+## 12. Sombras en las ventanas con Picom (opcional)
+
+Para que los temas se vean mejor y sea más fácil diferenciar dónde termina cada ventana, se puede usar `picom` para añadir una sombra suave alrededor de las ventanas.
+
+Primero instale `picom`:
+
+```bash
+sudo apt install picom
+```
+
+Para dejarlo fijo, abra el archivo `~/.fluxbox/startup` y añada esta línea antes de `exec fluxbox`:
+
+```bash
+picom --backend xrender --shadow --shadow-radius 17 --shadow-offset-x -17 --shadow-offset-y -17 --shadow-opacity 0.30 --inactive-opacity 1 --active-opacity 1 --frame-opacity 1 --no-fading-openclose &
+```
+
+Este comando deja las ventanas con sombras en las cuatro esquinas, sin hacer transparentes las ventanas activas ni inactivas.
+
+## 13. Temas de iconos recomendados para usar en Fluxbox
+
+Por defecto, MX Linux XFCE suele usar Papirus y funciona muy bien con aplicaciones GTK y KDE. Si usa otros temas, como Breeze, puede ocurrir que algunos iconos específicos de Thunar u otros programas no aparezcan en la barra de herramientas.
+
+### Instalar temas de iconos desde los repositorios
+
+Puede instalar varios temas de iconos útiles con:
+
+```bash
+sudo apt install papirus-icon-theme numix-icon-theme numix-icon-theme-circle \
+numix-icon-theme-shine breeze-icon-theme yaru-icon-theme paper-icon-theme \
+adwaita-icon-theme-full humanity-icon-theme faenza-icon-theme \
+mate-icon-theme oxygen-icon-theme tango-icon-theme gnome-icon-theme-extras
+```
+
+**Nota:** Puede editar esta lista para no instalar todos, porque ocupan espacio.
+
+### Temas recomendados
+
+| Tema de iconos | Paquete | Descripción |
+| --- | --- | --- |
+| **Papirus** | `papirus-icon-theme` | Diseño plano, moderno y muy completo. Incluye Papirus, Papirus-Dark y Papirus-Light. Es el que más recomiendo. |
+| **Numix** | `numix-icon-theme` | Diseño limpio y minimalista con iconos cuadrados de bordes ligeramente redondeados. |
+| **Numix Circle** | `numix-icon-theme-circle` | Variante de Numix con iconos circulares. |
+| **Breeze** | `breeze-icon-theme` | Tema oficial de KDE Plasma. Limpio y bien dibujado, aunque en Thunar puede faltar algún icono de barra de herramientas. |
+| **Yaru** | `yaru-theme-icon` o `yaru-icon-theme` según disponibilidad | Tema de iconos de Ubuntu, moderno y colorido. |
+| **Adwaita** | `adwaita-icon-theme-full` | Tema oficial de GNOME, completo y mantenido. |
+| **MATE** | `mate-icon-theme` | Tema clásico del escritorio MATE. |
+| **Oxygen** | `oxygen-icon-theme` | Tema clásico de KDE 4, con estilo tradicional. |
+
+### Cómo aplicar los temas de iconos
+
+Para cambiar el tema de iconos vaya a:
+
+**Menú --> Herramientas del Sistema --> Personalizar apariencia y comportamiento**
+
+o ejecute:
+
+```bash
+lxappearance
+```
+
+Allí abra la pestaña **Tema de iconos** y elija el tema deseado, por ejemplo:
+
+- Papirus
+- Papirus-Dark
+- Papirus-Light
+- Numix-Circle
+- Breeze
+
+### Temas de iconos que no están en los repositorios
+
+Algunos temas populares se instalan manualmente desde GitHub, por ejemplo:
+
+- Tela Icon Theme: [https://github.com/vinceliuice/Tela-icon-theme](https://github.com/vinceliuice/Tela-icon-theme)
+- Flat-Remix Icon Theme: [https://github.com/daniruiz/flat-remix](https://github.com/daniruiz/flat-remix)
+- Colloid Icon Theme: [https://github.com/vinceliuice/Colloid-icon-theme](https://github.com/vinceliuice/Colloid-icon-theme)
+
+Ejemplo con Tela:
+
+```bash
+git clone https://github.com/vinceliuice/Tela-icon-theme.git
+cd Tela-icon-theme
+./install.sh
+```
+
+También hice un fork de los iconos de Zorin OS con instrucciones de instalación:
+
+**Zorin Icon Themes**
+[https://github.com/wachin/zorin-icon-themes](https://github.com/wachin/zorin-icon-themes)
+
+Estos temas se pueden seleccionar desde `lxappearance`. Para aplicaciones Qt/KDE también se pueden seleccionar desde `qt5ct`.
+
+## 14. Temas GTK desde los repositorios
+
+Además de los estilos de Fluxbox y los temas de iconos, también se pueden instalar temas GTK para cambiar la apariencia de administradores de archivos y programas como Thunar, PCManFM, Geany, FeatherPad y otras aplicaciones GTK.
+
+Instale temas GTK desde los repositorios de MX Linux 23 con:
+
+```bash
+sudo apt install gnome-themes-extra greybird-gtk-theme breeze-gtk-theme \
+mate-themes murrine-themes numix-gtk-theme yaru-theme-gtk \
+gtk2-engines-murrine gtk2-engines-pixbuf
+```
+
+| Tema GTK | Paquete | Descripción |
+| --- | --- | --- |
+| **Adwaita / Adwaita-Dark** | `gnome-themes-extra` | Tema oficial de GNOME y su variante oscura. Muy completo. |
+| **Greybird** | `greybird-gtk-theme` | Tema plano y limpio creado para Xubuntu. Excelente para Fluxbox. |
+| **Breeze** | `breeze-gtk-theme` | Tema GTK de KDE Plasma para igualar aplicaciones GTK con aplicaciones KDE. |
+| **MATE** | `mate-themes` | Incluye varios temas clásicos del escritorio MATE. |
+| **Murrine** | `murrine-themes` | Colección de temas clásicos que usan el motor Murrine. |
+| **Numix** | `numix-gtk-theme` | Tema GTK del proyecto Numix. |
+| **Yaru** | `yaru-theme-gtk` | Tema de Ubuntu con variantes clara, oscura y mixta. |
+
+**Nota sobre los motores:** `gtk2-engines-murrine` y `gtk2-engines-pixbuf` ayudan a que temas GTK2 antiguos se vean correctamente.
+
+### Cómo aplicar los temas GTK
+
+Después de instalarlos, se eligen desde:
+
+**Menú --> Herramientas del Sistema --> Personalizar apariencia y comportamiento**
+
+o ejecutando:
+
+```bash
+lxappearance
+```
+
+En la pestaña **Tema de widget** aparecerán los temas GTK instalados.
+
+**Nota:** Estos temas GTK cambian la apariencia de las aplicaciones, pero no cambian los bordes de las ventanas de Fluxbox. Los bordes de las ventanas se cambian con estilos de `~/.fluxbox/styles`.
+
+### Temas GTK de Zorin OS
+
+También hice un fork de los temas de Zorin OS aquí:
+
+[https://github.com/wachin/zorin-desktop-themes](https://github.com/wachin/zorin-desktop-themes)
+
+Allí añadí estos temas:
+
+- **Windows11-Light**
+- **Windows11-Dark**
+- **LinuxModern-Light**
+- **LinuxModern-Dark**
+
+Los temas `Windows11-Light` y `Windows11-Dark` están basados en los temas azules de Zorin, pero ajustados para parecerse más a Windows 11 claro y oscuro.
+
+Los temas `LinuxModern-Light` y `LinuxModern-Dark` están basados en los temas grises de Zorin, pero ajustados para dar una apariencia Linux moderna con acento verde azulado.
+
+Para instalarlos en MX Linux 23 para su usuario:
+
+```bash
+mkdir -p ~/.themes
+cp -a zorin-desktop-themes/Zorin*-Light ~/.themes/
+cp -a zorin-desktop-themes/Zorin*-Dark ~/.themes/
+cp -a zorin-desktop-themes/Windows11-Light ~/.themes/
+cp -a zorin-desktop-themes/Windows11-Dark ~/.themes/
+cp -a zorin-desktop-themes/LinuxModern-Light ~/.themes/
+cp -a zorin-desktop-themes/LinuxModern-Dark ~/.themes/
+sudo apt install gtk2-engines-murrine
+```
+
+Después se elige el tema desde `lxappearance`, en la pestaña **Tema de widget**.
+
 ---
 
 Dios les bendiga
