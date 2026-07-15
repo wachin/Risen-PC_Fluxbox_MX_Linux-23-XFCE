@@ -1,31 +1,3 @@
-# Fluxbox diagnostics and fixes for Qt/KDE dialogs
-
-Date: 2026-07-14
-
-
-## Changes applied
-
-### 1. Transient dialog focus rule
-
-File: `~/.fluxbox/apps`
-
-Added a Fluxbox `[transient]` rule:
-
-```text
-[transient] (Class=^(kate|kdenlive|dolphin|dmidiplayer|ksnip)$)
-  [FocusProtection] {Gain,Lock}
-[end]
-```
-
-Reason:
-
-- `[transient]` applies to modal/dialog windows with `WM_TRANSIENT_FOR`.
-- `Gain` tells Fluxbox that the new dialog is allowed to take focus when it opens.
-- `Lock` prevents another window from stealing focus immediately while the modal dialog is active.
-
-This is more targeted and less invasive than changing the global focus model for all windows.
-
-
 # RisenPC-Fluxbox-ES
 
 MX Linux 23 tiene una versión Fluxbox pero no me gusta como queda, entonces esta es mi versión en español para Ordenadores con pocos recursos
@@ -245,6 +217,26 @@ y lo dejo así:
 ![](vx_images/547226287889782.png)
 
 y allí le di clic en Aceptar y Aplicar y reinicié la aplicación Qt que necesitaba.
+
+# Corrección de foco para diálogos Qt/KDE
+
+Fecha: 2026-07-14
+
+En el archivo `~/.fluxbox/apps` añadí una regla `[transient]` para que algunos diálogos de aplicaciones Qt/KDE puedan tomar el foco correctamente:
+
+```text
+[transient] (Class=^(kate|kdenlive|dolphin|dmidiplayer|ksnip)$)
+  [FocusProtection] {Gain,Lock}
+[end]
+```
+
+Explicación:
+
+- `[transient]` se aplica a ventanas de diálogo o ventanas modales que usan `WM_TRANSIENT_FOR`.
+- `Gain` permite que el nuevo diálogo tome el foco cuando se abre.
+- `Lock` evita que otra ventana robe el foco inmediatamente mientras el diálogo modal está activo.
+
+Esta solución es más específica y menos invasiva que cambiar el modelo global de foco para todas las ventanas.
 
 # Atajos de teclado, manual para crear atajos de teclado en Fluxbox
 
