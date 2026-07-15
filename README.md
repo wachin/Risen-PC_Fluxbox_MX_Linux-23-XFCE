@@ -850,6 +850,42 @@ Numix también debería de funcionar bien. Pueden probar otros si desean
 este tema de iconos es además compatible con las aplicaciones KDE si lo usaran también al ponerlo en "Qt5Ct"
 
 
+## Temas GTK para administradores de archivos y programas
+
+Además de los estilos de Fluxbox, también se pueden usar temas GTK para cambiar la apariencia de los administradores de archivos y demás programas, por ejemplo Thunar, PCManFM, Geany, FeatherPad y otras aplicaciones GTK.
+
+Yo hice un fork de los temas de Zorin OS aquí:
+
+[https://github.com/wachin/zorin-desktop-themes](https://github.com/wachin/zorin-desktop-themes)
+
+Allí añadí el tema:
+
+**Windows11-Light**
+
+Ese tema está basado en `ZorinBlue-Light`, pero ajustado para parecerse más al tema claro de Windows 11.
+
+Para instalarlos en MX Linux 23 para su usuario:
+
+```bash
+mkdir -p ~/.themes
+cp -a zorin-desktop-themes/Zorin*-Light ~/.themes/
+cp -a zorin-desktop-themes/Zorin*-Dark ~/.themes/
+cp -a zorin-desktop-themes/Windows11-Light ~/.themes/
+sudo apt install gtk2-engines-murrine
+```
+
+Después se elige el tema desde:
+
+**Menú --> Herramientas del Sistema --> Personalizar apariencia y comportamiento**
+
+o ejecutando:
+
+```bash
+lxappearance
+```
+
+**Nota:** Estos temas GTK cambian la apariencia de las aplicaciones, pero no cambian los bordes de las ventanas de Fluxbox. Los bordes de las ventanas se cambian con los estilos que están en `~/.fluxbox/styles`.
+
 
 
 # Editar las opciones de Fluxbox (opcional)
