@@ -921,6 +921,13 @@ Hay disponibles unos temas, vealos en:
 **Cómo añadir los repositorios de Deepin Linux 20 a MX Linux 19 de 32 bits, antiX 16 de 64 bits para instalar sus Aplicaciones (se podría también instalar en antiX, Linux Mint 4 Debbie)**  
 [https://facilitarelsoftwarelibre.blogspot.com/2021/03/como-anadir-los-repositorios-de-deepin.html](https://facilitarelsoftwarelibre.blogspot.com/2021/03/como-anadir-los-repositorios-de-deepin.html)
 
+### Tema de Zorin OS
+
+Zorin tiene un tema del cual he hecho un Fork y le puse instrucciones (en inglés) de instalación
+
+**Zorin Icon Themes**  
+[https://github.com/wachin/zorin-icon-themes](https://github.com/wachin/zorin-icon-themes)
+
 Estos temas manuales son compatibles con aplicaciones GTK y también se pueden seleccionar desde `lxappearance` o desde **Qt5Ct** para aplicaciones KDE.
 
 ---

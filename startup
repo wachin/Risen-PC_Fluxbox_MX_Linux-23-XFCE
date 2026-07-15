@@ -38,6 +38,9 @@ xdg-user-dirs-gtk-update
 # Red en bandeja o área de notificación compatible
 nm-applet &
 
+# Sombras en las ventanas con Picom
+picom --backend xrender --shadow --shadow-radius 17 --shadow-offset-x -17 --shadow-offset-y -17 --shadow-opacity 0.30 --inactive-opacity 1 --active-opacity 1 --frame-opacity 1 --no-fading-openclose &
+
 # Mixer
 sleep 2; pnmixer &
 
