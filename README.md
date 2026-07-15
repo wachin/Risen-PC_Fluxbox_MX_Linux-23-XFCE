@@ -914,6 +914,13 @@ Puedes revisar este tema en:
 **Tema de iconos Suru++ (Compatible con más de 20 distribuciones Linux)**  
 [https://facilitarelsoftwarelibre.blogspot.com/2020/05/tema-de-iconos-suru-compatible-con.html](https://facilitarelsoftwarelibre.blogspot.com/2020/05/tema-de-iconos-suru-compatible-con.html)
 
+###  Tema de Deepin Linux
+
+Hay disponibles unos temas, vealos en:
+
+**Cómo añadir los repositorios de Deepin Linux 20 a MX Linux 19 de 32 bits, antiX 16 de 64 bits para instalar sus Aplicaciones (se podría también instalar en antiX, Linux Mint 4 Debbie)**  
+[https://facilitarelsoftwarelibre.blogspot.com/2021/03/como-anadir-los-repositorios-de-deepin.html](https://facilitarelsoftwarelibre.blogspot.com/2021/03/como-anadir-los-repositorios-de-deepin.html)
+
 Estos temas manuales son compatibles con aplicaciones GTK y también se pueden seleccionar desde `lxappearance` o desde **Qt5Ct** para aplicaciones KDE.
 
 ---
