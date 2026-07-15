@@ -4,10 +4,11 @@ These are the custom Fluxbox themes currently kept in:
 
 `/home/wachin/.fluxbox/styles/`
 
-The themes are grouped into five visual families:
+The themes are grouped into six visual families:
 
 - `Modern-Clear-Dusk`: dark graphite, teal focus, warm gold clock text, coral pressed-button accent.
 - `Windows-7-Blue`: blue glass style inspired by the default Windows 7 look.
+- `Windows-11-Light`: light Windows 11 inspired white chrome, soft gray borders, and blue focus.
 - `macOS-Aqua`: light macOS-inspired chrome with blue focus and soft graphite text.
 - `Aurora-Slate`: blue graphite chrome, green aurora focus, amber clock text, coral pressed-button accent.
 - `Windows-XP-Luna`: Windows XP Luna-inspired royal blue chrome, pale menus, amber task focus, and green grips.
@@ -22,6 +23,9 @@ The themes are grouped into five visual families:
 | `Windows-7-Blue` | `Noto Sans-10` | `28` | `28` | `26` | `28` | `4` |
 | `Windows-7-Blue-Medium` | `Noto Sans-9` | `24` | `24` | `23` | `24` | `3` |
 | `Windows-7-Blue-small` | `Noto Sans-8` | `21` | `22` | `21` | `22` | `2` |
+| `Windows-11-Light` | `Noto Sans-10` | `28` | `28` | `26` | `28` | `4` |
+| `Windows-11-Light-Medium` | `Noto Sans-9` | `24` | `24` | `23` | `24` | `3` |
+| `Windows-11-Light-Small` | `Noto Sans-8` | `21` | `22` | `21` | `22` | `2` |
 | `macOS-Aqua` | `Noto Sans-10` | `28` | `28` | `26` | `28` | `4` |
 | `macOS-Aqua-Medium` | `Noto Sans-9` | `24` | `24` | `23` | `24` | `3` |
 | `macOS-Aqua-Small` | `Noto Sans-8` | `21` | `22` | `21` | `22` | `2` |
@@ -41,6 +45,9 @@ The themes are grouped into five visual families:
 /home/wachin/.fluxbox/styles/Windows-7-Blue/theme.cfg
 /home/wachin/.fluxbox/styles/Windows-7-Blue-Medium/theme.cfg
 /home/wachin/.fluxbox/styles/Windows-7-Blue-small/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-11-Light/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-11-Light-Medium/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-11-Light-Small/theme.cfg
 /home/wachin/.fluxbox/styles/macOS-Aqua/theme.cfg
 /home/wachin/.fluxbox/styles/macOS-Aqua-Medium/theme.cfg
 /home/wachin/.fluxbox/styles/macOS-Aqua-Small/theme.cfg

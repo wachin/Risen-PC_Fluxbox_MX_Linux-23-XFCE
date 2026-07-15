@@ -1,2 +1,2 @@
 fbsetbg -f ~/.fluxbox/backgrounds/warty-tux-ubuntu-1360x768.png
-$full $full|/home/wachin/.fluxbox/backgrounds/warty-tux-ubuntu-1360x768.png||:0
+fbsetroot|-foreground #d7e7f7 -solid #d7e7f7|style|:0
