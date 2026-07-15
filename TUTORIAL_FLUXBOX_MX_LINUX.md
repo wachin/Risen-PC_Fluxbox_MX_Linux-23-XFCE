@@ -162,7 +162,7 @@ Ese archivo pertenece más al mecanismo de generación del menú del sistema que
 Instala estas utilidades:
 
 ```bash
-sudo apt-get install fluxbox lxappearance lxrandr pnmixer numlockx gxkb xfce4-appfinder network-manager-gnome pavucontrol gnome-icon-theme
+sudo apt-get install fluxbox lxappearance lxrandr pnmixer numlockx gxkb xfce4-appfinder network-manager-gnome pavucontrol gnome-icon-theme nitrogen
 ```
 
 ### Explicación de cada paquete
@@ -196,6 +196,218 @@ sudo apt-get install fluxbox lxappearance lxrandr pnmixer numlockx gxkb xfce4-ap
 
 - `gnome-icon-theme`
   Proporciona iconos clásicos que ayudan a que menús y utilidades antiguas se vean mejor o no queden sin icono.
+
+- `nitrogen`
+  Permite elegir y restaurar el fondo de pantalla en Fluxbox. Es útil porque Fluxbox no trae una herramienta gráfica propia para cambiar wallpapers.
+
+### 5.1 Cambiar el wallpaper con Nitrogen
+
+La primera vez que se usa Nitrogen en esta configuración conviene resetear su configuración, especialmente si se está usando por primera vez o si se quiere volver a detectar bien la configuración de monitores.
+
+Desde el menú de Fluxbox vaya a:
+
+**Menú --> Herramientas del Sistema --> Resetear Nitrogen en 1er uso, y resetear para usar Dos Monitores**
+
+![](vx_images/378662901615609.png)
+
+Esa opción borra la configuración anterior de Nitrogen:
+
+```bash
+rm -r ~/.config/nitrogen/
+```
+
+Después de esto ya puede abrir Nitrogen con los fondos del sistema desde:
+
+**Menú --> Herramientas del Sistema --> Cambair el fondo del escritorio con Nitrogen - imagenes del sistema-**
+
+![](vx_images/547226287889787.png)
+
+Allí se abrirá Nitrogen y podrá cambiar el fondo de pantalla. Por defecto abrirá los fondos instalados en el sistema, normalmente en:
+
+```bash
+/usr/share/backgrounds/
+```
+
+En la siguiente imagen se ven los pasos para elegir otro fondo:
+
+![](vx_images/547226287889788.png)
+
+En el punto 2, donde dice **Automatic**, conviene cambiarlo a **Scaled** para que la imagen ocupe todo el fondo del escritorio si no tiene el mismo tamaño que la pantalla.
+
+### 5.2 Añadir un wallpaper personalizado
+
+Para usar imágenes propias como wallpaper, cree una carpeta en algún lugar de su usuario. Por ejemplo, puede crearla dentro de la carpeta `Imágenes`:
+
+![](vx_images/547226287889789.png)
+
+Ejemplo:
+
+![](vx_images/547226287889790.png)
+
+En este ejemplo la carpeta se llama `Wallpapers` y dentro se han puesto varias imágenes:
+
+![](vx_images/547226287889791.png)
+
+Para seleccionarlas desde Nitrogen, abra:
+
+**Menú --> Herramientas del Sistema --> Cambiar sus fondos de escritorio con Nitrogen - sus imagenes-**
+
+![](vx_images/547226287889818.png)
+
+Luego, dentro de Nitrogen, haga clic en:
+
+**Preferencias**
+
+![](vx_images/547226287889792.png)
+
+Allí añada la ruta donde están sus wallpapers:
+
+![](vx_images/547226287889793.png)
+
+Así:
+
+![](vx_images/547226287889794.png)
+
+Luego queda añadida la carpeta y se da clic en **OK**:
+
+![](vx_images/547226287889795.png)
+
+En la siguiente imagen se ve que Nitrogen ya cargó las imágenes de la carpeta creada dentro de `Imágenes`:
+
+![](vx_images/547226287889796.png)
+
+**Nota:** `Scaled` sirve para que la imagen ocupe todo el fondo del escritorio si no tiene el mismo tamaño que la pantalla.
+
+![](vx_images/547226287889797.png)
+
+### 5.3 Añadir fondos de escritorio desde paquetes de los repositorios
+
+En los repositorios hay varios paquetes de fondos de escritorio de diferentes distribuciones. En Synaptic puede buscar:
+
+```text
+backgrounds
+```
+
+Allí aparecerán varios paquetes con fondos de escritorio:
+
+![](vx_images/547226287889801.png)
+
+Por ejemplo, si instala:
+
+```text
+mate-backgrounds
+```
+
+y revisa sus **Archivos instalados**:
+
+![](vx_images/547226287889802.png)
+
+verá que los fondos quedan instalados normalmente en una ruta como:
+
+```bash
+/usr/share/backgrounds/mate
+```
+
+![](vx_images/547226287889803.png)
+
+Si Nitrogen no carga esos fondos directamente, una solución práctica es copiar las imágenes a la carpeta personal donde guarda sus wallpapers.
+
+Una forma de obtener los fondos sin instalar todo el paquete definitivamente es marcarlos para instalar en Synaptic:
+
+![](vx_images/547226287889804.png)
+
+Luego genere un script de descarga:
+
+![](vx_images/547226287889805.png)
+
+El script de descarga por defecto puede aparecer para guardarse dentro de la ubicación `root`:
+
+![](vx_images/547226287889806.png)
+
+Es mejor guardarlo en una ubicación donde su usuario pueda borrar y mover archivos fácilmente, por ejemplo otra partición, un pendrive o una carpeta personal:
+
+![](vx_images/547226287889807.png)
+
+Después abra el archivo generado:
+
+![](vx_images/547226287889808.png)
+
+Cada una de las líneas generadas en el script:
+
+![](vx_images/547226287889809.png)
+
+se puede descargar desde una terminal, una por una o todas al mismo tiempo:
+
+![](vx_images/547226287889810.png)
+
+**Nota:** Hay que esperar hasta que el porcentaje llegue al 100% de descarga. En la imagen anterior, los paquetes `.deb` se descargarán en el `HOME`.
+
+Luego cada paquete se puede descomprimir con clic derecho y **Extraer aquí**:
+
+![](vx_images/547226287889811.png)
+
+Dentro del paquete descomprimido busque las imágenes y muévalas a la carpeta donde guarda sus wallpapers:
+
+![](vx_images/547226287889812.png)
+
+En la siguiente imagen ya se ha entrado en el lugar donde están las imágenes:
+
+![](vx_images/547226287889813.png)
+
+Todas esas imágenes se pueden mover al lugar donde tiene sus fondos de escritorio.
+
+Otro paquete con imágenes para fondo de pantalla es:
+
+```text
+plasma-wallpapers-addons
+```
+
+**Nota:** Estas capturas son de MX Linux 19. En MX Linux 23 o MX Linux 25 puede haber más paquetes disponibles buscando `backgrounds` o `wallpaper` en Synaptic.
+
+### 5.4 Dónde descargar más wallpapers del mundo Linux
+
+También se pueden buscar fondos de otras distribuciones desde Google o desde los repositorios públicos de cada distribución.
+
+Para fondos de Ubuntu puede buscar:
+
+```text
+backgrounds packages.ubuntu.com
+```
+
+![](vx_images/547226287889814.png)
+
+También puede buscar:
+
+```text
+wallpaper archive.ubuntu.com
+```
+
+![](vx_images/547226287889815.png)
+
+Algunos enlaces útiles son:
+
+- [http://archive.ubuntu.com/ubuntu/pool/universe/u/ubuntu-gnome-wallpapers/](http://archive.ubuntu.com/ubuntu/pool/universe/u/ubuntu-gnome-wallpapers/)
+- [http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-wallpapers/](http://archive.ubuntu.com/ubuntu/pool/main/u/ubuntu-wallpapers/)
+
+Para fondos de Deepin Linux puede buscar:
+
+```text
+wallpapers community-packages.deepin.com
+```
+
+![](vx_images/547226287889816.png)
+
+Un enlace útil es:
+
+- [https://community-packages.deepin.com/deepin/pool/main/d/deepin-wallpapers/](https://community-packages.deepin.com/deepin/pool/main/d/deepin-wallpapers/)
+
+Para fondos de Linux Mint puede buscar:
+
+```text
+wallpapers packages.linuxmint.com
+```
+
+![](vx_images/547226287889817.png)
 
 ## 6. Instalar PolicyKit para programas administrativos
 
@@ -366,7 +578,6 @@ Un ejemplo de menú personalizado útil en MX Linux es este, basado en mi config
    [exec] (VS Code Corregido) {code --password-store="gnome-libsecret"} </usr/share/pixmaps/vscode.png>
    [exec] (Cursor AI Corregido) {cursor --password-store="gnome-libsecret"} </usr/share/pixmaps/co.anysphere.cursor.png>
    [exec] (Kiro Corregido) {/usr/share/kiro/kiro --password-store="gnome-libsecret"} </usr/share/pixmaps/code-oss.png>
-   [exec] (Windsurf Corregido) {/usr/share/windsurf/windsurf --password-store="gnome-libsecret"} </usr/share/pixmaps/windsurf.png>
    [exec] (Antigravity Corregido) {/usr/share/antigravity/antigravity --password-store="gnome-libsecret"} </usr/share/pixmaps/antigravity.png>
    [exec] (TRAE Corregido) {/usr/share/trae/trae --password-store="gnome-libsecret"} </usr/share/pixmaps/trae.png>
    [exec] (Actualizar menu de Apps) {xdgmenumaker -i -s16 -f fluxbox > ~/.fluxbox/xdg_menu} </usr/share/icons/gnome/16x16/actions/gtk-redo-ltr.png>
@@ -490,16 +701,16 @@ mate-icon-theme oxygen-icon-theme tango-icon-theme gnome-icon-theme-extras
 
 ### Temas recomendados
 
-| Tema de iconos | Paquete | Descripción |
-| --- | --- | --- |
-| **Papirus** | `papirus-icon-theme` | Diseño plano, moderno y muy completo. Incluye Papirus, Papirus-Dark y Papirus-Light. Es el que más recomiendo. |
-| **Numix** | `numix-icon-theme` | Diseño limpio y minimalista con iconos cuadrados de bordes ligeramente redondeados. |
-| **Numix Circle** | `numix-icon-theme-circle` | Variante de Numix con iconos circulares. |
-| **Breeze** | `breeze-icon-theme` | Tema oficial de KDE Plasma. Limpio y bien dibujado, aunque en Thunar puede faltar algún icono de barra de herramientas. |
-| **Yaru** | `yaru-theme-icon` o `yaru-icon-theme` según disponibilidad | Tema de iconos de Ubuntu, moderno y colorido. |
-| **Adwaita** | `adwaita-icon-theme-full` | Tema oficial de GNOME, completo y mantenido. |
-| **MATE** | `mate-icon-theme` | Tema clásico del escritorio MATE. |
-| **Oxygen** | `oxygen-icon-theme` | Tema clásico de KDE 4, con estilo tradicional. |
+|  Tema de iconos  |                          Paquete                           |                                                       Descripción                                                       |
+| ---------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| **Papirus**      | `papirus-icon-theme`                                       | Diseño plano, moderno y muy completo. Incluye Papirus, Papirus-Dark y Papirus-Light. Es el que más recomiendo.          |
+| **Numix**        | `numix-icon-theme`                                         | Diseño limpio y minimalista con iconos cuadrados de bordes ligeramente redondeados.                                     |
+| **Numix Circle** | `numix-icon-theme-circle`                                  | Variante de Numix con iconos circulares.                                                                                |
+| **Breeze**       | `breeze-icon-theme`                                        | Tema oficial de KDE Plasma. Limpio y bien dibujado, aunque en Thunar puede faltar algún icono de barra de herramientas. |
+| **Yaru**         | `yaru-theme-icon` o `yaru-icon-theme` según disponibilidad | Tema de iconos de Ubuntu, moderno y colorido.                                                                           |
+| **Adwaita**      | `adwaita-icon-theme-full`                                  | Tema oficial de GNOME, completo y mantenido.                                                                            |
+| **MATE**         | `mate-icon-theme`                                          | Tema clásico del escritorio MATE.                                                                                       |
+| **Oxygen**       | `oxygen-icon-theme`                                        | Tema clásico de KDE 4, con estilo tradicional.                                                                          |
 
 ### Cómo aplicar los temas de iconos
 
@@ -556,15 +767,15 @@ mate-themes murrine-themes numix-gtk-theme yaru-theme-gtk \
 gtk2-engines-murrine gtk2-engines-pixbuf
 ```
 
-| Tema GTK | Paquete | Descripción |
-| --- | --- | --- |
-| **Adwaita / Adwaita-Dark** | `gnome-themes-extra` | Tema oficial de GNOME y su variante oscura. Muy completo. |
-| **Greybird** | `greybird-gtk-theme` | Tema plano y limpio creado para Xubuntu. Excelente para Fluxbox. |
-| **Breeze** | `breeze-gtk-theme` | Tema GTK de KDE Plasma para igualar aplicaciones GTK con aplicaciones KDE. |
-| **MATE** | `mate-themes` | Incluye varios temas clásicos del escritorio MATE. |
-| **Murrine** | `murrine-themes` | Colección de temas clásicos que usan el motor Murrine. |
-| **Numix** | `numix-gtk-theme` | Tema GTK del proyecto Numix. |
-| **Yaru** | `yaru-theme-gtk` | Tema de Ubuntu con variantes clara, oscura y mixta. |
+|          Tema GTK          |       Paquete        |                                Descripción                                 |
+| -------------------------- | -------------------- | -------------------------------------------------------------------------- |
+| **Adwaita / Adwaita-Dark** | `gnome-themes-extra` | Tema oficial de GNOME y su variante oscura. Muy completo.                  |
+| **Greybird**               | `greybird-gtk-theme` | Tema plano y limpio creado para Xubuntu. Excelente para Fluxbox.           |
+| **Breeze**                 | `breeze-gtk-theme`   | Tema GTK de KDE Plasma para igualar aplicaciones GTK con aplicaciones KDE. |
+| **MATE**                   | `mate-themes`        | Incluye varios temas clásicos del escritorio MATE.                         |
+| **Murrine**                | `murrine-themes`     | Colección de temas clásicos que usan el motor Murrine.                     |
+| **Numix**                  | `numix-gtk-theme`    | Tema GTK del proyecto Numix.                                               |
+| **Yaru**                   | `yaru-theme-gtk`     | Tema de Ubuntu con variantes clara, oscura y mixta.                        |
 
 **Nota sobre los motores:** `gtk2-engines-murrine` y `gtk2-engines-pixbuf` ayudan a que temas GTK2 antiguos se vean correctamente.
 
