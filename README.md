@@ -27,7 +27,9 @@ El comando anterior instalará fluxbox pero ese trae unos temas muy feos, yo nun
 sudo rm -fr /usr/share/fluxbox/styles/
 ```
 
-No se preocupe aquí usaremos unos
+No se preocupe aquí usaremos unos que ya trae este repositorio, y además estos de aquí que los puede usar si desea:
+
+[https://github.com/wachin/fluxbox-styles-themes--from-MX-Linux-antiX-23](https://github.com/wachin/fluxbox-styles-themes--from-MX-Linux-antiX-23)
 
 # Borrar los archivos originales de Fluxbox si Ud los usaba
 
@@ -308,14 +310,14 @@ Control Mod1 e :Exec nautilus
 ```
 ** Nota:** Se puede cambiar por: dolphin, nemo, thunar, etc
 
-#### 4. **Reiniciar Fluxbox**
+## 4. **Reiniciar Fluxbox**
    Después de agregar o modificar los atajos de teclado, es necesario recargar la configuración de Fluxbox para que los cambios surtan efecto. Para hacerlo, puedes ejecutar el siguiente comando:
 
 ```bash
 fluxbox-remote restart
 ```
 
-#### 5. **Ejemplo de un archivo de atajos de teclado completo**
+## 5. **Ejemplo de un archivo de atajos de teclado completo**
 
 Los siguientes atajos en `~/.fluxbox/keys` son unos atajos que estoy utilizando::
 
@@ -484,6 +486,7 @@ Por cierto para minimizar gammy en MX Linux 19 es así como muestro en la siguie
 
 
 # Cómo cambiar de Estilo de Fluxbox
+
 Cuando usted cambie de estilo:
 
 En es escritorio clic derecho en el menú, o en las esquinas o Super + M y clic en **Estilos**  
