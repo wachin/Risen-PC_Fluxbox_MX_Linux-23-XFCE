@@ -44,7 +44,6 @@
    [exec] (VS Code Corregido) {code --password-store="gnome-libsecret"} </usr/share/pixmaps/vscode.png>
    [exec] (Cursor AI Corregido) {cursor --password-store="gnome-libsecret"} </usr/share/pixmaps/co.anysphere.cursor.png>
    [exec] (Kiro Corregido) {/usr/share/kiro/kiro --password-store="gnome-libsecret"} </usr/share/pixmaps/code-oss.png>
-   [exec] (Windsurf Corregido) {/usr/share/windsurf/windsurf --password-store="gnome-libsecret"} </usr/share/pixmaps/windsurf.png>
    [exec] (Antigravity Corregido) {/usr/share/antigravity/antigravity --password-store="gnome-libsecret"} </usr/share/pixmaps/antigravity.png>
    [exec] (TRAE Corregido) {/usr/share/trae/trae --password-store="gnome-libsecret"} </usr/share/pixmaps/trae.png>
    [exec] (Actualizar menu de Apps) {xdgmenumaker -i -s16 -f fluxbox > ~/.fluxbox/xdg_menu} </usr/share/icons/gnome/16x16/actions/gtk-redo-ltr.png>
