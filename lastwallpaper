@@ -1,2 +1,2 @@
 fbsetbg -f ~/.fluxbox/backgrounds/warty-tux-ubuntu-1360x768.png
-fbsetroot|-foreground #d7e7f7 -solid #d7e7f7|style|:0
+fbsetroot|-foreground #f3f3f3 -solid #f3f3f3|style|:0

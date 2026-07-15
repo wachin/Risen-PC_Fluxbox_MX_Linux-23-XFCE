@@ -501,6 +501,25 @@ En es escritorio clic derecho en el menú, o en las esquinas o Super + M y clic 
 al hacer eso ya se verán bien todos los estilos disponibles
 
 
+## Sombras en las ventanas con Picom (opcional)
+
+Para que los temas se vean mejor y sea más fácil diferenciar dónde termina cada ventana, se puede usar `picom` para añadir una sombra suave alrededor de las ventanas.
+
+Primero instale `picom`:
+
+```bash
+sudo apt install picom
+```
+
+Para dejarlo fijo, abra el archivo `~/.fluxbox/startup` y añada esta línea antes de `exec fluxbox`:
+
+```bash
+picom --backend xrender --shadow --shadow-radius 17 --shadow-offset-x -17 --shadow-offset-y -17 --shadow-opacity 0.30 --inactive-opacity 1 --active-opacity 1 --frame-opacity 1 --no-fading-openclose &
+```
+
+Este comando deja las ventanas con sombras en las cuatro esquinas, sin hacer transparentes las ventanas activas ni inactivas.
+
+
 # Cambiar el idioma del teclado
 Yo vivo en el Ecuador en Latinoamérica y uso la Distribución para Español Latino y por eso lo he dejado configurado para usarlo, cic en:
 

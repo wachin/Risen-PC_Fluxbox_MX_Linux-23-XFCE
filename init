@@ -68,7 +68,7 @@ session.screen0.workspaces:	4
 session.screen0.workspaceNames:	Workspace 1,Workspace 2,Workspace 3,Workspace 4,
 session.screen0.windowPlacement:	RowMinOverlapPlacement
 session.screen0.maxDisableMove:	false
-session.styleFile:	/home/wachin/.fluxbox/styles/Windows-7-Blue-small
+session.styleFile:	/home/wachin/.fluxbox/styles/Windows-11-Light-Small
 session.tabPadding:	0
 session.autoRaiseDelay:	250
 session.slitlistFile:	/home/wachin/.fluxbox/slitlist
