@@ -817,9 +817,9 @@ También si desea la puede mover más arriba
 
 **Nota:** Se debería poder añadir otras terminales algo así mismo.
 
-# Temas de iconos recomendados para usar Thunar
+# Temas de iconos recomendados para usar en Fluxbox
 
-Por defecto será usado el tema de iconos de Gnome que instalamos arriba y se verá el icono en la barra de herramientas, pero si usted desea usar otro como lo es Breeze, ya no se verá el icono de Thunar en la barra de herramientas (esto ocurre porque algunos temas no incluyen los nombres de iconos específicos que usa la barra de herramientas de Thunar).
+Por defecto será usado el tema de iconos Papirus por defecto en MX Linux XFCE y se verá el icono en la barra de herramientas, pero si usted desea usar otro como lo es Breeze posiblemente no se verá (puede que lo arreglen después) el icono de Thunar en la barra de herramientas (esto ocurre porque algunos temas no incluyen los nombres de iconos específicos que usa la barra de herramientas de Thunar, u otros programas).
 
 ## Instalación de los mejores temas de iconos disponibles
 
@@ -832,7 +832,7 @@ adwaita-icon-theme-full humanity-icon-theme faenza-icon-theme \
 mate-icon-theme oxygen-icon-theme tango-icon-theme gnome-icon-theme-extras
 ```
 
-Nota: Puedes editar esta lista para no instalar todos, porque ocupan espacio
+**Nota:** Puedes editar esta lista para no instalar todos, porque ocupan espacio
 
 ### Descripción de cada tema
 
@@ -932,9 +932,48 @@ Estos temas manuales son compatibles con aplicaciones GTK y también se pueden s
 
 ---
 
-## Temas GTK para administradores de archivos y programas
+# Temas GTK desde los repositorios
 
-Además de los estilos de Fluxbox, también se pueden usar temas GTK para cambiar la apariencia de los administradores de archivos y demás programas, por ejemplo Thunar, PCManFM, Geany, FeatherPad y otras aplicaciones GTK.
+Además de los estilos de Fluxbox y de los temas personalizados, también puede instalar temas GTK directamente desde los repositorios de MX Linux 23 que servirán para cambiar la apariencia de los administradores de archivos y demás programas, por ejemplo Thunar, PCManFM, Geany, FeatherPad y otras aplicaciones GTK.:
+
+```bash
+sudo apt install gnome-themes-extra greybird-gtk-theme breeze-gtk-theme \
+mate-themes murrine-themes numix-gtk-theme yaru-theme-gtk \
+gtk2-engines-murrine gtk2-engines-pixbuf
+```
+
+|       Tema GTK       |       Paquete        |                                                                                  Descripción                                                                                   |
+| -------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Adwaita-Dark**     | `gnome-themes-extra` | Variante oscura del tema oficial de GNOME. También incluye temas heredados como HighContrast. Es el más completo y mejor mantenido.                                            |
+| **Greybird**         | `greybird-gtk-theme` | Tema plano y limpio creado para Xubuntu. Aspecto profesional y moderno sin ser llamativo. Excelente para Fluxbox.                                                              |
+| **Breeze**           | `breeze-gtk-theme`   | Tema GTK de KDE Plasma. Permite que las aplicaciones GTK tengan el mismo aspecto que las aplicaciones KDE. Simple y limpio.                                                    |
+| **MATE (varios)**    | `mate-themes`        | Incluye múltiples temas clásicos del escritorio MATE: **BlackMATE**, **BlueMATE**, **GreenMATE**, **ContrastHighMATE**, etc. Estilo tradicional con colores vivos en carpetas. |
+| **Murrine (varios)** | `murrine-themes`     | Colección de temas clásicos que usan el motor Murrine: **MurrinaBlue**, **MurrinaCandy**, **MurrinaEpsilon**, etc. Ideales si le gusta el estilo clásico de Linux.             |
+| **Numix**            | `numix-gtk-theme`    | Tema GTK del proyecto Numix. Oscuro por defecto, combina perfecto con los iconos Numix que instalamos arriba.                                                                  |
+| **Yaru**             | `yaru-theme-gtk`     | Tema de Ubuntu. Diseño moderno con esquinas redondeadas y paleta de colores agradable. Incluye variantes clara, oscura y mixta.                                                |
+
+**Nota sobre los motores:** `gtk2-engines-murrine` ya lo instalamos más abajo para los temas del fork de Zorin, pero lo incluyo aquí también por si desea instalar solo estos temas. `gtk2-engines-pixbuf` es un motor adicional para temas GTK2 antiguos que algunos temas Murrine podrían necesitar.
+
+## Cómo aplicar los temas GTK
+
+Después de instalarlos, se eligen desde:
+
+**Menú --> Herramientas del Sistema --> Personalizar apariencia y comportamiento**
+
+o ejecutando:
+
+```bash
+lxappearance
+```
+
+Allí en la pestaña **Tema de widget** aparecerán todos los temas GTK instalados. Al elegir uno, cambiará la apariencia de Thunar, Geany, FeatherPad, PCManFM y todas las aplicaciones GTK.
+
+**Nota:** Estos temas GTK cambian la apariencia de las aplicaciones, pero no cambian los bordes de las ventanas de Fluxbox. Los bordes de las ventanas se cambian con los estilos que están en `~/.fluxbox/styles`.
+
+---
+
+
+## Temas GTK de Zorin OS
 
 Yo hice un fork de los temas de Zorin OS aquí:
 
@@ -977,7 +1016,6 @@ lxappearance
 **Nota:** Estos temas GTK cambian la apariencia de las aplicaciones, pero no cambian los bordes de las ventanas de Fluxbox. Los bordes de las ventanas se cambian con los estilos que están en `~/.fluxbox/styles`.
 
 
-
 # Editar las opciones de Fluxbox (opcional)
 Para facil acceso les he dejado 
 
@@ -986,12 +1024,6 @@ En es escritorio clic derecho en el menú, o en las esquinas o Super + M y clic 
 ![](vx_images/455513928941351.png)
 
 se abrirá el editor de texto que ustedes usen
-
-# Gracias a Note
-Este tutorial ha sido hecho gracias al editor de Markdown Multiplataforma VNote:
-
-**Vnote for MX Linux 21 (y Linux basados en Debian 11 Bullseye) ~ Proyecto Facilitar el Software Libre en el Ecuador**
-[https://facilitarelsoftwarelibre.blogspot.com/2022/07/vnote-for-mx-linux-deb-package.html](https://facilitarelsoftwarelibre.blogspot.com/2022/07/vnote-for-mx-linux-deb-package.html)
 
 # Configurar la velocidad del cursor en dispositivos 
 xinput-gui es una interfaz grafica para xinput que le permitirá editar propiedades de dispositivos como:
@@ -1012,27 +1044,27 @@ Dios les bendiga
 
 # CONSULTAS: 
 
-Editing_the_init_file  
-http://fluxbox-wiki.org/category/howtos/en/Editing_the_init_file.html  
+**Editing_the_init_file**  
+[http://fluxbox-wiki.org/category/howtos/en/Editing_the_init_file.html ](http://fluxbox-wiki.org/category/howtos/en/Editing_the_init_file.html) 
 
-How to place the toolbar to the top in fluxbox? - Unix & Linux Stack Exchange   
-https://unix.stackexchange.com/questions/146277/how-to-place-the-toolbar-to-the-top-in-fluxbox  
+**How to place the toolbar to the top in fluxbox? - Unix & Linux Stack Exchange**   
+[https://unix.stackexchange.com/questions/146277/how-to-place-the-toolbar-to-the-top-in-fluxbox](https://unix.stackexchange.com/questions/146277/how-to-place-the-toolbar-to-the-top-in-fluxbox)  
 
-Fluxbox Documentation  
-http://fluxbox.sourceforge.net/docbook/en/html/  
+**Fluxbox Documentation**  
+[http://fluxbox.sourceforge.net/docbook/en/html/](http://fluxbox.sourceforge.net/docbook/en/html/)  
 
-DSL Tips and Tricks :: Changing Fluxbox time display to 24 hour format  
-http://www.damnsmalllinux.org/f/topic-3-26-12332-0.html  
+**DSL Tips and Tricks :: Changing Fluxbox time display to 24 hour format**  
+[http://www.damnsmalllinux.org/f/topic-3-26-12332-0.html](http://www.damnsmalllinux.org/f/topic-3-26-12332-0.html)  
 
-IceWM install and setup guide  
-http://forums.fedoraforum.org/showthread.php?t=282433  
+**IceWM install and setup guide**  
+[http://forums.fedoraforum.org/showthread.php?t=282433](http://forums.fedoraforum.org/showthread.php?t=282433)  
 
-xdgmenumaker  
-https://github.com/gapan/xdgmenumaker  
+**xdgmenumaker**  
+[https://github.com/gapan/xdgmenumaker](https://github.com/gapan/xdgmenumaker)  
 
-Nitrogen - ArchWiki  
-https://wiki.archlinux.org/title/nitrogen  
+**Nitrogen - ArchWiki**  
+[https://wiki.archlinux.org/title/nitrogen](https://wiki.archlinux.org/title/nitrogen)  
 
-Xubuntu Thunar "Open Terminal Here" opens konsole in homefolder  
-https://askubuntu.com/questions/891680/xubuntu-thunar-open-terminal-here-opens-konsole-in-homefolder  
-https://askubuntu.com/a/892502  https://github.com/mifi/lossless-cut
+**Xubuntu Thunar "Open Terminal Here" opens konsole in homefolder**  
+[https://askubuntu.com/questions/891680/xubuntu-thunar-open-terminal-here-opens-konsole-in-homefolder](https://askubuntu.com/questions/891680/xubuntu-thunar-open-terminal-here-opens-konsole-in-homefolder)  
+[https://askubuntu.com/a/892502  https://github.com/mifi/lossless-cut](https://askubuntu.com/a/892502  https://github.com/mifi/lossless-cut)

@@ -10,7 +10,7 @@
    [exec] (Ajustes QT5 "Aplicaciones KDE") {qt5ct} </usr/share/icons/gnome/16x16/apps/preferences-desktop-theme.png>
    [exec] (Gestor de paquetes Synaptic) {synaptic-pkexec} </usr/share/icons/gnome/16x16/categories/applications-other.png>
    [exec] (Administrador de archivos Dolphin) {dolphin} </usr/share/icons/gnome/16x16/places/folder.png>
-   [exec] (Administrador de archivos Thunar) {thunar --no-desktop} </usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png>
+   [exec] (Administrador de archivos Thunar) {thunar} </usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png>
    [exec] (Proyecto Facilitar el Software Libre en el Ecuador) {xdg-open http://facilitarelsoftwarelibre.blogspot.com} </usr/share/icons/gnome/16x16/emblems/emblem-web.png>
  [end] # (Herramientas de Fluxbox)
     [submenu] (Preferencias de Fluxbox) </usr/share/icons/gnome/16x16/categories/preferences-desktop.png>
