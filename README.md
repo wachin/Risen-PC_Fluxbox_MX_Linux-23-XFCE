@@ -299,9 +299,9 @@ Control Mod1 c :Close
 
    - **Alternar entre ventanas**: Para alternar entre las ventanas abiertas, el atajo sería:
 
-     ```
-     Mod1 Tab :NextWindow
-     ```
+```
+Mod1 Tab :NextWindow
+```
 
    - **Abrir el administrador de archivos**: Para abrir Nautilus (el explorador de archivos) con el atajo `Ctrl + Alt + E`:
 
@@ -817,38 +817,106 @@ También si desea la puede mover más arriba
 
 **Nota:** Se debería poder añadir otras terminales algo así mismo.
 
-# Temas de iconos recomendados para usar Thunar 
-Por defecto será usado el tema de iconos de Gnome que instalamos arriba y se verá el icono en la barra de herramientas, pero si usted desea usar otro como lo es Breeze, ya no se verá el icono de Thunar en la barra de herramientas
+# Temas de iconos recomendados para usar Thunar
 
-Si usted quiere usar otro tema de iconos uno de los que recomiendo es:
+Por defecto será usado el tema de iconos de Gnome que instalamos arriba y se verá el icono en la barra de herramientas, pero si usted desea usar otro como lo es Breeze, ya no se verá el icono de Thunar en la barra de herramientas (esto ocurre porque algunos temas no incluyen los nombres de iconos específicos que usa la barra de herramientas de Thunar).
 
-Papirus  
+## Instalación de los mejores temas de iconos disponibles
 
-para usarlo 
+A continuación los mejores temas de iconos disponibles en los repositorios de Debian/MX Linux 23. Puede instalar todos de una sola vez:
+
+```bash
+sudo apt install papirus-icon-theme numix-icon-theme numix-icon-theme-circle \
+numix-icon-theme-shine breeze-icon-theme yaru-icon-theme paper-icon-theme \
+adwaita-icon-theme-full humanity-icon-theme faenza-icon-theme \
+mate-icon-theme oxygen-icon-theme tango-icon-theme gnome-icon-theme-extras
+```
+
+Nota: Puedes editar esta lista para no instalar todos, porque ocupan espacio
+
+### Descripción de cada tema
+
+|                Tema de iconos                |                                                                                                                      Descripción                                                                                                                       |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Papirus** (`papirus-icon-theme`)           | Uno de los temas más populares de Linux. Diseño plano, moderno y muy completo. Incluye las variantes **Papirus**, **Papirus-Dark** y **Papirus-Light**. Funciona perfecto con aplicaciones GTK y KDE (también en Qt5Ct). **Es el que más recomiendo.** |
+| **Numix** (`numix-icon-theme`)               | Diseño limpio y minimalista con iconos cuadrados de bordes ligeramente redondeados. Muy ligero.                                                                                                                                                        |
+| **Numix Circle** (`numix-icon-theme-circle`) | Misma base que Numix pero con iconos circulares. Muy agradable visualmente.                                                                                                                                                                            |
+| **Numix Shine** (`numix-icon-theme-shine`)   | Variante de Numix con un efecto de brillo (shine) sobre los iconos.                                                                                                                                                                                    |
+| **Breeze** (`breeze-icon-theme`)             | Tema oficial de KDE Plasma. Iconos limpios y bien dibujados. **Nota:** Con este tema puede que no se vea el icono en la barra de herramientas de Thunar.                                                                                               |
+| **Yaru** (`yaru-icon-theme`)                 | Tema de iconos de Ubuntu (desde Ubuntu 18.04). Diseño moderno, colorido y muy completo. Excelente cobertura de aplicaciones.                                                                                                                           |
+| **Paper** (`paper-icon-theme`)               | Inspirado en Material Design de Google. Iconos con formas suaves y sombras sutiles.                                                                                                                                                                    |
+| **Adwaita** (`adwaita-icon-theme-full`)      | Tema de iconos oficial de GNOME. La versión `full` incluye todos los iconos (la versión sin `full` es más limitada). Muy completo y mantenido por GNOME.                                                                                               |
+| **Humanity** (`humanity-icon-theme`)         | Tema clásico de Ubuntu usado durante años. Iconos con estilo humanoide (personitas) en carpetas y colores cálidos.                                                                                                                                     |
+| **Faenza** (`faenza-icon-theme`)             | Uno de los temas clásicos más queridos de Linux. Diseño semi-plano con iconos cuadrados. Aunque ya no se actualiza, sigue funcionando bien.                                                                                                            |
+| **MATE** (`mate-icon-theme`)                 | Tema de iconos del escritorio MATE (fork de GNOME 2). Estilo clásico de carpetas con colores vivos.                                                                                                                                                    |
+| **Oxygen** (`oxygen-icon-theme`)             | Tema clásico de KDE 4. Iconos con estilo "cristalino" (glassy). Bueno para quienes prefieren un estilo más tradicional.                                                                                                                                |
+| **Tango** (`tango-icon-theme`)               | El estándar clásico de freedesktop.org. Iconos con paleta de colores limitada pero muy reconocible. Base de muchos otros temas.                                                                                                                        |
+| **GNOME Extras** (`gnome-icon-theme-extras`) | Iconos adicionales que complementan al tema de GNOME. Útil si usa `gnome-icon-theme` y le faltan algunos iconos de aplicaciones.                                                                                                                       |
+
+## Cómo aplicar los temas de iconos
+
+Para cambiar el tema de iconos vaya a:
 
 **Menú --> Herramientas del Sistema --> Personalizar apariencia y comportamiento**
 
-**Nota:** El menú principal de Fluxbox se lo puede abrir desde escritorio con clic derecho, o en las esquinas abajo izquierda o derecha abajo, o con el atajo de teclado Super + M
+**Nota:** El menú principal de Fluxbox se lo puede abrir desde el escritorio con clic derecho, o en las esquinas abajo izquierda o derecha abajo, o con el atajo de teclado Super + M
 
 ![](vx_images/506513509268989.png)
 
 allí en la pestaña:
 
-Tema de iconos
+**Tema de iconos**
 
 ![](vx_images/511683991826512.png)
 
-También pueden usar las variantes:
+Allí aparecerán todos los temas que haya instalado. Por ejemplo, si instaló `papirus-icon-theme`, podrá elegir entre:
 
-Papirus-Dark  
-Papirus-Light  
+- Papirus
+- Papirus-Dark
+- Papirus-Light
 
-además el tema:
+Si instaló `numix-icon-theme-circle`, podrá elegir:
 
-Numix también debería de funcionar bien. Pueden probar otros si desean
+- Numix-Circle
+- Numix-Circle-Light
 
-este tema de iconos es además compatible con las aplicaciones KDE si lo usaran también al ponerlo en "Qt5Ct"
+## Temas de iconos que NO están en los repositorios (instalación manual)
 
+Algunos temas de iconos muy populares no están en los repositorios de Debian/MX Linux. Si desea instalarlos, debe hacerlo manualmente. Los más destacados son:
+
+### Tela Icon Theme
+Tema de iconos plano basado en Material Design con iconos de carpetas en forma de carpeta real. Muy completo y actualizado frecuentemente.
+
+- Página: [https://github.com/vinceliuice/Tela-icon-theme](https://github.com/vinceliuice/Tela-icon-theme)
+
+### Flat-Remix Icon Theme
+Tema de iconos plano con diseño material. Tiene variantes de colores (azul, oscuro, etc.).
+
+- Página: [https://github.com/daniruiz/flat-remix](https://github.com/daniruiz/flat-remix)
+
+### Colloid Icon Theme
+Fork de Tela con iconos ligeramente diferentes. Muy completo.
+
+- Página: [https://github.com/vinceliuice/Colloid-icon-theme](https://github.com/vinceliuice/Colloid-icon-theme)
+
+Para instalar cualquiera de estos temas manuales, generalmente basta con clonar el repositorio y ejecutar su script de instalación (usualmente `./install.sh`). Por ejemplo para Tela:
+
+```bash
+git clone https://github.com/vinceliuice/Tela-icon-theme.git
+cd Tela-icon-theme
+./install.sh
+```
+
+### Tema de iconos Suru++ (Compatible con más de 20 distribuciones Linux)
+
+Puedes revisar este tema en:
+
+**Tema de iconos Suru++ (Compatible con más de 20 distribuciones Linux)**  
+[https://facilitarelsoftwarelibre.blogspot.com/2020/05/tema-de-iconos-suru-compatible-con.html](https://facilitarelsoftwarelibre.blogspot.com/2020/05/tema-de-iconos-suru-compatible-con.html)
+
+Estos temas manuales son compatibles con aplicaciones GTK y también se pueden seleccionar desde `lxappearance` o desde **Qt5Ct** para aplicaciones KDE.
+
+---
 
 ## Temas GTK para administradores de archivos y programas
 

@@ -52,10 +52,10 @@
       [stylesdir] (/usr/share/fluxbox/styles)
       [stylesdir] (~/.fluxbox/styles)
    [end]
- [submenu] (Salir) </usr/share/icons/gnome/16x16/actions/stop.png>
-   [exec] (Reiniciar) {systemctl reboot} </usr/share/icons/gnome/16x16/actions/reload.png>
-   [exec] (Apagar) {systemctl poweroff} </usr/share/icons/gnome/16x16/actions/system-shutdown.png>
-   [exec] (Suspender) {systemctl suspend} </usr/share/icons/gnome/16x16/actions/player_pause.png>
-   [exit] (Cerrar Sesión) </usr/share/icons/gnome/16x16/actions/system-log-out.png>
- [end]
+  [submenu] (Salir) </usr/share/icons/gnome/16x16/actions/stop.png>
+     [exec] (Reiniciar) {pkexec /sbin/reboot} </usr/share/icons/gnome/16x16/actions/reload.png>
+     [exec] (Apagar) {pkexec /sbin/poweroff} </usr/share/icons/gnome/16x16/actions/system-shutdown.png>
+     [exec] (Suspender) {pkexec /usr/sbin/pm-suspend} </usr/share/icons/gnome/16x16/actions/player_pause.png>
+     [exit] (Cerrar Sesión) </usr/share/icons/gnome/16x16/actions/system-log-out.png>
+  [end]
 [end]
