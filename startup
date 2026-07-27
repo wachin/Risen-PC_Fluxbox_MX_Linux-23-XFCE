@@ -52,10 +52,10 @@ numlockx on &
 
 #setxkbmap -layout es & # Teclado Español europeo
 
-ksnip &
+
 kate &
 thunar &
-dolphin &
+gedit &
 #nemo &
 xfce4-notes &
 xfce4-terminal &

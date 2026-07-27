@@ -27,7 +27,7 @@ El comando anterior instalará fluxbox pero ese trae unos temas muy feos, yo nun
 sudo rm -fr /usr/share/fluxbox/styles/
 ```
 
-No se preocupe aquí usaremos unos que ya trae este repositorio, y además estos de aquí que los puede usar si desea:
+No se preocupe aquí usaremos unos que ya trae este repositorio, y además los siguientes que los puede usar si desea:
 
 [https://github.com/wachin/fluxbox-styles-themes--from-MX-Linux-antiX-23](https://github.com/wachin/fluxbox-styles-themes--from-MX-Linux-antiX-23)
 
@@ -178,6 +178,7 @@ y se abrirá el control de volumen:
 
 
 # Temas de iconos para aplicaciones KDE (Qt)
+
 
 Se configura en:
 
