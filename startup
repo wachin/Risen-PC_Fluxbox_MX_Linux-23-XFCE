@@ -20,7 +20,7 @@ xmodmap "/home/wachin/.Xmodmap"
 #     exists. If it does, we'll start it up by default.
 
 # Wallpaper
-fbsetbg -f ~/.fluxbox/backgrounds/warty-tux-ubuntu-1360x768.png
+fbsetbg -f ~/.fluxbox/backgrounds/warty-tux-ubuntu-1360x768.png &
 
 # PolicyKit
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
@@ -30,16 +30,23 @@ fbsetbg -f ~/.fluxbox/backgrounds/warty-tux-ubuntu-1360x768.png
 eval $(gnome-keyring-daemon --start --components=secrets) &
 # -----------------------------------------------------------------------------
 
+# Bluetooth System Tray
+/usr/bin/blueman-tray &
+
 
 # Mantener actualizados los directorios XDG del usuario
-xdg-user-dirs-update
-xdg-user-dirs-gtk-update
+xdg-user-dirs-update &
+xdg-user-dirs-gtk-update &
 
 # Red en bandeja o área de notificación compatible
 nm-applet &
 
 # Sombras en las ventanas con Picom
-picom --backend xrender --shadow --shadow-radius 17 --shadow-offset-x -17 --shadow-offset-y -17 --shadow-opacity 0.30 --inactive-opacity 1 --active-opacity 1 --frame-opacity 1 --no-fading-openclose &
+# picom --backend xrender --shadow --shadow-radius 17 --shadow-offset-x -17 --shadow-offset-y -17 --shadow-opacity 0.30 --inactive-opacity 1 --active-opacity 1 --frame-opacity 1 --no-fading-openclose &
+
+# picom --backend xrender --shadow --shadow-radius 17 --shadow-offset-x -17 --shadow-offset-y -17 --shadow-opacity 0.30 --inactive-opacity 1 --active-opacity 1 --frame-opacity 1 --no-fading-openclose &
+
+#picom --backend glx --shadow &
 
 # Mixer
 sleep 2; pnmixer &
@@ -68,6 +75,7 @@ sleep 5; lxrandr &
 #wireplumber &
 
 python3 /home/wachin/Dev/xsct_gui-dev/xsct_gui/xsct_gui.py &
+
 
 # Lanzar el bus de accesibilidad; algunas apps GTK/Qt lo esperan
 /usr/libexec/at-spi-bus-launcher --launch-immediately &
