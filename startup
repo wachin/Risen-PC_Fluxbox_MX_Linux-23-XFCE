@@ -30,6 +30,13 @@ fbsetbg -f ~/.fluxbox/backgrounds/warty-tux-ubuntu-1360x768.png &
 eval $(gnome-keyring-daemon --start --components=secrets) &
 # -----------------------------------------------------------------------------
 
+# Evitar que se apague el monitor después de 10 minutos de inactividad
+# https://facilitarelsoftwarelibre.blogspot.com/2024/02/la-computadora-se-congela-despues-de-que-se-apaga-la-pantalla.html
+
+sleep 20; xset -dpms s off
+
+# -----------------------------------------------------------------------------
+
 # Bluetooth System Tray
 /usr/bin/blueman-tray &
 
@@ -62,7 +69,7 @@ numlockx on &
 
 kate &
 thunar &
-gedit &
+#gedit &
 #nemo &
 xfce4-notes &
 xfce4-terminal &
