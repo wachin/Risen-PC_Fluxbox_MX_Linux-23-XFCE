@@ -72,17 +72,20 @@ thunar &
 #gedit &
 #nemo &
 xfce4-notes &
-xfce4-terminal &
+# xfce4-terminal &
 google-chrome-stable &
 sleep 5; lxrandr &
+
+xinput-plus &
 
 # Audio (PipeWire)
 #pipewire &
 #pipewire-pulse &
 #wireplumber &
 
-python3 /home/wachin/Dev/xsct_gui-dev/xsct_gui/xsct_gui.py &
+#python3 /home/wachin/Dev/xsct_gui-dev/xsct_gui/xsct_gui.py &
 
+python3 /home/wachin/Dev/xsct_gui-dev/xsct_gui_sin_cambios/xsct_gui.py &
 
 # Lanzar el bus de accesibilidad; algunas apps GTK/Qt lo esperan
 /usr/libexec/at-spi-bus-launcher --launch-immediately &
