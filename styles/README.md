@@ -13,6 +13,32 @@ The themes are grouped into six visual families:
 - `Aurora-Slate`: blue graphite chrome, green aurora focus, amber clock text, coral pressed-button accent.
 - `Windows-XP-Luna`: Windows XP Luna-inspired royal blue chrome, pale menus, amber task focus, and green grips.
 
+Each family now also has a `-Dark` variant in the three sizes. The originals
+remain unchanged.
+
+## Dark Variants
+
+The Dark variants keep the original layout, fonts, title/toolbar/menu heights,
+handle widths, and Fluxbox behaviour. Only the palette changes:
+
+- light surfaces become dark graphite/navy surfaces;
+- dark text becomes light text with accessible contrast;
+- each family keeps its focus and accent hues;
+- Aurora-Slate and Modern-Clear-Dusk, which were already dark, become a little
+  deeper.
+
+| Family | Base | Medium | Small |
+| --- | --- | --- | --- |
+| Aurora Slate | `Aurora-Slate-Dark` | `Aurora-Slate-Medium-Dark` | `Aurora-Slate-Small-Dark` |
+| Modern Clear Dusk | `Modern-Clear-Dusk-Dark` | `Modern-Clear-Dusk-Medium-Dark` | `Modern-Clear-Dusk-Small-Dark` |
+| macOS Aqua | `macOS-Aqua-Dark` | `macOS-Aqua-Medium-Dark` | `macOS-Aqua-Small-Dark` |
+| Windows 7 Blue | `Windows-7-Blue-Dark` | `Windows-7-Blue-Medium-Dark` | `Windows-7-Blue-small-Dark` |
+| Windows 11 Light | `Windows-11-Light-Dark` | `Windows-11-Light-Medium-Dark` | `Windows-11-Light-Small-Dark` |
+| Windows XP Luna | `Windows-XP-Luna-Dark` | `Windows-XP-Luna-Medium-Dark` | `Windows-XP-Luna-Small-Dark` |
+
+The `Windows-7-Blue-small-Dark` name keeps the lowercase `small` of the
+original directory. The other small variants already use `Small`.
+
 ## Theme Sizes
 
 | Theme | Font | Window title height | Toolbar height | Menu row height | Menu title height | Handle width |
@@ -57,6 +83,25 @@ The themes are grouped into six visual families:
 /home/wachin/.fluxbox/styles/Windows-XP-Luna/theme.cfg
 /home/wachin/.fluxbox/styles/Windows-XP-Luna-Medium/theme.cfg
 /home/wachin/.fluxbox/styles/Windows-XP-Luna-Small/theme.cfg
+
+/home/wachin/.fluxbox/styles/Aurora-Slate-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Aurora-Slate-Medium-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Aurora-Slate-Small-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Modern-Clear-Dusk-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Modern-Clear-Dusk-Medium-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Modern-Clear-Dusk-Small-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/macOS-Aqua-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/macOS-Aqua-Medium-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/macOS-Aqua-Small-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-7-Blue-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-7-Blue-Medium-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-7-Blue-small-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-11-Light-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-11-Light-Medium-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-11-Light-Small-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-XP-Luna-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-XP-Luna-Medium-Dark/theme.cfg
+/home/wachin/.fluxbox/styles/Windows-XP-Luna-Small-Dark/theme.cfg
 ```
 
 ## Notes
